@@ -1,0 +1,54 @@
+{
+    "metadata": {
+        "game_uid": "starbound",
+        "version": "0.1.0",
+        "type": "steamcmd",
+        "project": "https://github.com/peon-war-plans/starbound",
+        "maintainers": "umlatt <richard@noxnoctua.com>",
+        "description": "https://raw.githubusercontent.com/peon-war-plans/starbound/main/README.md"
+    },
+    "container_config": {
+        "image": "cm2network/steamcmd",
+        "user": "steam",
+        "ports": {
+            "21025/tcp": 21025,
+            "21025/udp": 21025,
+            "8766/tcp": 8766,
+            "27016/udp": 27016
+        },
+        "variables": {
+            "STEAMID": "533830",
+            "LD_LIBRARY_PATH": "/home/steam/steamcmd/data:/home/steam/steamcmd/data/bins",
+            "STEAM_APP_ID": "FAF2A4440AD8A08D4AA17F852C0ED263"
+        },
+        "volumes": {
+            "shared_plan_path": {
+                "bind": "/home/steam/steamcmd/peon/shared",
+                "mode": "rw"
+            },
+            "unique_plan_path": {
+                "bind": "/home/steam/steamcmd/peon/unique",
+                "mode": "rw"
+            },
+            "config": {
+                "bind": "/home/steam/config",
+                "mode": "rw"
+            },
+            "data_path": {
+                "bind": "/home/steam/steamcmd/data",
+                "mode": "rw"
+            },
+            "log_path": {
+                "bind": "/var/log/peon",
+                "mode": "rw"
+            }
+        },
+        "working_directory": "/home/steam/steamcmd",
+        "command": "peon/shared/steamcmd_trigger_start.sh"
+    },
+    "server_config": {
+        "commands": [
+            "peon/shared/steamcmd_server_update.sh"
+        ]
+    }
+}

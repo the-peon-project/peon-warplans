@@ -1,0 +1,65 @@
+{
+    "metadata": {
+        "game_uid": "vrising",
+        "version": "0.1.0",
+        "type": "steamcmd",
+        "project": "https://github.com/peon-war-plans/csgo",
+        "maintainers": "umlatt <richard@noxnoctua.com>",
+        "description": "https://raw.githubusercontent.com/peon-war-plans/vrising/main/README.md"
+    },
+    "container_config": {
+        "image": "umlatt/steamcmd-winehq",
+
+        "user": "steam",
+        "ports": {
+            "9876/udp": 9876,
+            "9877/udp": 9877,
+            "25575/tcp": 25575,
+            "27015/tcp": 27015,
+            "27036/tcp": 27036,
+            "27015/udp": 27015,
+            "27016/udp": 27016,
+            "27031/udp": 27031,
+            "27032/udp": 27032,
+            "27033/udp": 27033,
+            "27034/udp": 27034,
+            "27035/udp": 27035,
+            "27036/udp": 27036
+        },
+        "variables": {
+            "STEAMID": "1829350",
+            "LD_LIBRARY_PATH": "/home/steam/steamcmd/data:/home/steam/steamcmd/data/bins",
+            "GAMEPORT": "9876",
+            "QUERYPORT": "9877"
+        },
+        "volumes": {
+            "shared_plan_path": {
+                "bind": "/home/steam/steamcmd/peon/shared",
+                "mode": "rw"
+            },
+            "unique_plan_path": {
+                "bind": "/home/steam/steamcmd/peon/unique",
+                "mode": "rw"
+            },
+            "config": {
+                "bind": "/home/steam/steamcmd/peon/config",
+                "mode": "rw"
+            },
+            "data_path": {
+                "bind": "/home/steam/steamcmd/data",
+                "mode": "rw"
+            },
+            "log_path": {
+                "bind": "/var/log/peon",
+                "mode": "rw"
+            }
+        },
+        "working_directory": "/home/steam/steamcmd",
+        "command": "peon/shared/steamcmd_trigger_start.sh"
+    },
+    "server_config": {
+        "commands": [
+            "peon/shared/steamcmd_server_update.sh"
+        ]
+    }
+}
