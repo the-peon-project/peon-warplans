@@ -4,7 +4,7 @@ The PEON war plan that Peon uses to deploy your game server.
 
 ## **NO OFFICIAL SUPPORT FOR LINUX YET**
 
-![V Rising](https://cdn.playvrising.com/web2/images/hero/vRisingLogo.png)
+![V Rising](./logo.png)
 
 ## Source
 

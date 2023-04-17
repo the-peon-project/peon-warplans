@@ -2,7 +2,7 @@
 
 The PEON war plan that Peon uses to deploy your game server.
 
-![Valhiem](https://images.squarespace-cdn.com/content/v1/5e203941ee6ea226e307532c/1591180375783-X8NOPY125RXYVHV3208B/valheim_transparent.png)
+![Valhiem](./logo.png)
 
 ## Source
 

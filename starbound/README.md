@@ -2,7 +2,7 @@
 
 The PEON war plan that Peon uses to deploy your game server.
 
-![Starbound](https://playstarbound.com/wp-content/uploads/2016/04/starboundlogo_.png)
+![Starbound](./logo.png)
 
 ## Settings
 
