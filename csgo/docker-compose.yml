@@ -1,0 +1,14 @@
+version: '3'
+services:
+  server:
+    hostname: peon.steamcmd.csgo
+    image: umlatt/steamcmd
+    ports:
+      - ${PORT_GAME}:${PORT_GAME}/tcp
+      - ${PORT_GAME}:${PORT_GAME}/udp
+      - ${PORT_RCON}:${PORT_RCON}/tcp
+      - ${PORT_RCON}:${PORT_RCON}/udp
+    environment:
+      - STEAMID=740
+      - LD_LIBRARY_PATH=/home/steam/steamcmd/data:/home/steam/steamcmd/data/bins
+      - STEAM_APP_ID=${STEAM_APP_ID}
