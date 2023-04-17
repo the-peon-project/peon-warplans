@@ -12,3 +12,6 @@ services:
       - STEAMID=740
       - LD_LIBRARY_PATH=/home/steam/steamcmd/data:/home/steam/steamcmd/data/bins
       - STEAM_APP_ID=${STEAM_APP_ID}
+    volumes:
+      - ./config:/root/peon/config
+      - ./data:/home/steam/steamcmd/data
