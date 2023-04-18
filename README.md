@@ -23,8 +23,6 @@ A default organisation has been made for official game server plans will be host
 
 #### **Rolling release**
 
-
-
 ## Support the Project
 
 PEON is an open-source project that I am working on in my spare time (for fun).
