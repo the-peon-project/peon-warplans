@@ -11,6 +11,10 @@ services:
     environment:
       - STEAMID=740
       - STEAM_GSLT=${STEAM_GSLT}
+      - CSGO_GAME_TYPE=${CSGO_GAME_TYPE}
+      - CSGO_GAME_MODE=${CSGO_GAME_MODE}
+      - CSGO_MAP_GROUP=${CSGO_MAP_GROUP}
+      - CSGO_MAP=${CSGO_MAP}
     volumes:
       - ./server_files:/home/steam/server_files
       - ./server_start:/init/server_start

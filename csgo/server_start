@@ -2,4 +2,4 @@
 rootpath="/home/steam/server_files"
 cd $rootpath
 echo "###### CS:GO Server [STARTING]"
-./srcds_run -game csgo -console -usercon +game_type 0 +game_mode 0 +mapgroup mg_active +map de_dust2 +sv_setsteamaccount $STEAM_GSLT
+./srcds_run -game csgo -console -usercon +game_type $CSGO_GAME_TYPE +game_mode $CSGO_GAME_MODE +mapgroup $CSGO_MAP_GROUP +map $CSGO_MAP +sv_setsteamaccount $STEAM_GSLT
