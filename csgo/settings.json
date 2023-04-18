@@ -1,0 +1,16 @@
+{
+    "env_vars" : {
+        "STEAM_GSLT"     : { "default" : 0,             "value" : null, "optional" : true },
+        "CSGO_GAME_TYPE" : { "default" : 0,             "value" : null, "optional" : true },
+        "CSGO_GAME_MODE" : { "default" : 0,             "value" : null, "optional" : true },
+        "CSGO_MAP_GROUP" : { "default" : "mg_active",   "value" : null, "optional" : true },
+        "CSGO_MAP"       : { "default" : "de_dust2",    "value" : null, "optional" : true }
+    },
+    "files" : {
+        "autoexec.cfg"          : { "path" : "/home/steam/server_files/csgo/cfg/autoexec.cfg", "sample" : null, "provided" : false},
+        "server.cfg"            : { "path" : "/home/steam/server_files/csgo/cfg/server.cfg", "sample" : null,  "provided" : false},
+        "gamemodes.txt"         : { "path" : "/home/steam/server_files/csgo/gamemodes.txt", "sample" : "/home/steam/server_files/csgo/gamemodes.txt",  "provided" : false},
+        "gamemodes_server.txt"  : { "path" : "/home/steam/server_files/csgo/gamemodes_server.txt", "sample" : "gamemodes_server.txt.example",  "provided" : false}
+    }
+}
+
