@@ -23,15 +23,7 @@ A default organisation has been made for official game server plans will be host
 
 #### **Rolling release**
 
-##### Complete
 
-- [x] ...
-
-##### ToDo
-
-- [ ] Counterstrike Global Offensive
-- [ ] Valhiem
-- [x] VRising
 
 ## Support the Project
 
