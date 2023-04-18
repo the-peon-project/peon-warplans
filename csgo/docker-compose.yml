@@ -10,7 +10,7 @@ services:
       - ${PORT_RCON}:${PORT_RCON}/udp
     environment:
       - STEAMID=740
-      - STEAM_APP_ID=${STEAM_APP_ID}
+      - STEAM_GSLT=${STEAM_GSLT}
     volumes:
       - ./server_files:/home/steam/server_files
       - ./server_start:/init/server_start
