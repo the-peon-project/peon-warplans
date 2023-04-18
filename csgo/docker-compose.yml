@@ -20,3 +20,4 @@ services:
       - ./server_start:/init/server_start
       # ONLY REQUIRED FOR PEON
       - ./status:/home/peon/status
+      - ./upload:/home/peon/upload
