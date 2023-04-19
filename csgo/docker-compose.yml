@@ -1,6 +1,7 @@
 version: '3'
 services:
   server:
+    container_name: peon.warcamp.csgo.${SERVERNAME}
     hostname: peon.steamcmd.csgo
     image: umlatt/steamcmd
     ports:
