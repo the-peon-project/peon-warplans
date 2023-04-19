@@ -1,10 +1,12 @@
 version: '3'
 services:
   server:
+    container_name: peon.warcamp.valhiem.${SERVERNAME}
     hostname: peon.steamcmd.valhiem
     image: umlatt/steamcmd
     ports:
-      - ${PORT}:${PORT}/tcp
+      - 2456:2456
+      - 2457:2457
     environment:
       - STEAMID=896660
       - PORT=${PORT}
@@ -14,6 +16,7 @@ services:
     volumes:
       - ./data:/home/steam/data
       - ./server_start:/init/server_start
+      - ./init_custom:init_custom
       # ONLY REQUIRED FOR PEON
       - ./status:/home/peon/status
       - ./upload:/home/peon/upload
