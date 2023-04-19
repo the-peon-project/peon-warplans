@@ -10,13 +10,14 @@ services:
     environment:
       - STEAMID=896660
       - PORT=${PORT}
+      - SERVER_IP=${SERVER_IP}
       - SERVERNAME=${SERVERNAME}
       - WORLDNAME=${WORLDNAME}
       - PASSWORD=${PASSWORD}
     volumes:
       - ./data:/home/steam/data
       - ./server_start:/init/server_start
-      - ./init_custom:init_custom
+      - ./init_custom:/init/init_custom
       # ONLY REQUIRED FOR PEON
       - ./status:/home/peon/status
       - ./upload:/home/peon/upload
