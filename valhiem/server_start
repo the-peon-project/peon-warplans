@@ -1,4 +1,4 @@
 #!/bin/bash
-echo "###### Valhiem Server [STARTING]"
+echo "###### Valhiem Server $SERVERNAME [STARTING]"
 cd /home/steam/data
-./valheim_server.x86_64 -name $SERVERNAME -port $PORT -world $WORLDNAME -password $PASSWORD -savedir "/home/peon/download" -public 1
+./start_server.sh -name $SERVERNAME -port $PORT -world $WORLDNAME -password $PASSWORD -savedir "/home/peon/download" -public 1
