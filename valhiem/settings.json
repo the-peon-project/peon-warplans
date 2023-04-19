@@ -1,0 +1,13 @@
+{
+    "metadata" : {
+        "gid" : "valhiem",
+        "version" : "1.0.0",
+        "mode" : "steamcmd"
+    },
+    "env_vars" : {
+        "SERVERNAME"    : { "default" : "peon-warcamp", "value" : null, "optional" : false },
+        "WORLDNAME"     : { "default" : "peon", "value" : null, "optional" : false },
+        "PASSWORD"      : { "default" : "password", "value" : null, "optional" : false }
+    }
+}
+

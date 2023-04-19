@@ -1,0 +1,19 @@
+version: '3'
+services:
+  server:
+    hostname: peon.steamcmd.valhiem
+    image: umlatt/steamcmd
+    ports:
+      - ${PORT}:${PORT}/tcp
+    environment:
+      - STEAMID=896660
+      - SERVERNAME=${SERVERNAME}
+      - WORLDNAME=${WORLDNAME}
+      - PASSWORD=${PASSWORD}
+    volumes:
+      - ./server_files:/home/steam/server_files
+      - ./server_start:/init/server_start
+      # ONLY REQUIRED FOR PEON
+      - ./status:/home/peon/status
+      - ./upload:/home/peon/upload
+      - ./download:/home/steam/.config/unity3d/IronGate/Valheim/worlds
