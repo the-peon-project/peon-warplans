@@ -12,9 +12,9 @@ services:
       - WORLDNAME=${WORLDNAME}
       - PASSWORD=${PASSWORD}
     volumes:
-      - ./server_files:/home/steam/server_files
+      - ./data:/home/steam/data
       - ./server_start:/init/server_start
       # ONLY REQUIRED FOR PEON
       - ./status:/home/peon/status
       - ./upload:/home/peon/upload
-      - ./download:/home/steam/.config/unity3d/IronGate/Valheim/worlds
+      - ./download:/home/peon/download

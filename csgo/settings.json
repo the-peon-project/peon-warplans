@@ -12,10 +12,10 @@
         "CSGO_MAP"       : { "default" : "de_dust2",    "value" : null, "optional" : true }
     },
     "files" : {
-        "autoexec.cfg"          : { "path" : "/home/steam/server_files/csgo/cfg/autoexec.cfg", "sample" : null, "default" : false},
-        "server.cfg"            : { "path" : "/home/steam/server_files/csgo/cfg/server.cfg", "sample" : null,  "default" : false},
-        "gamemodes.txt"         : { "path" : "/home/steam/server_files/csgo/gamemodes.txt", "sample" : "/home/steam/server_files/csgo/gamemodes.txt",  "default" : false},
-        "gamemodes_server.txt"  : { "path" : "/home/steam/server_files/csgo/gamemodes_server.txt", "sample" : "gamemodes_server.txt.example",  "default" : false}
+        "autoexec.cfg"          : { "path" : "/home/steam/data/csgo/cfg/autoexec.cfg", "sample" : null, "default" : false},
+        "server.cfg"            : { "path" : "/home/steam/data/csgo/cfg/server.cfg", "sample" : null,  "default" : false},
+        "gamemodes.txt"         : { "path" : "/home/steam/data/csgo/gamemodes.txt", "sample" : "/home/steam/data/csgo/gamemodes.txt",  "default" : false},
+        "gamemodes_server.txt"  : { "path" : "/home/steam/data/csgo/gamemodes_server.txt", "sample" : "/home/steam/data/csgo/gamemodes_server.txt.example",  "default" : false}
     }
 }
 

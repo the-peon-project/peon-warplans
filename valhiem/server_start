@@ -1,5 +1,4 @@
 #!/bin/bash
-rootpath="/home/steam/server_files"
-cd $rootpath
 echo "###### Valhiem Server [STARTING]"
-./valheim_server.x86_64 -name $SERVERNAME -port $PORT -world $WORLDNAME -password $PASSWORD -public 1
+cd /home/steam/data
+./valheim_server.x86_64 -name $SERVERNAME -port $PORT -world $WORLDNAME -password $PASSWORD -savedir "/home/peon/download" -public 1
