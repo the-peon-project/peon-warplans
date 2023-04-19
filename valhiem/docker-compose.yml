@@ -7,6 +7,7 @@ services:
       - ${PORT}:${PORT}/tcp
     environment:
       - STEAMID=896660
+      - PORT=${PORT}
       - SERVERNAME=${SERVERNAME}
       - WORLDNAME=${WORLDNAME}
       - PASSWORD=${PASSWORD}
