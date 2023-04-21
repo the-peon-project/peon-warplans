@@ -21,4 +21,4 @@ services:
       - ./peon:/home/steam/peon
       # VALHIEM CUSTOM
       - ./init_custom:/init/init_custom
-      - ./download:/home/steam/.config/unity3d/IronGate/Valheim
+      - ./user:/home/steam/.config/unity3d/IronGate/Valheim
