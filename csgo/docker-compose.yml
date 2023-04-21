@@ -11,14 +11,14 @@ services:
       - ${PORT_RCON}:${PORT_RCON}/udp
     environment:
       - STEAMID=740
+      # GAME SERVER VARIABLES
       - STEAM_GSLT=${STEAM_GSLT}
       - CSGO_GAME_TYPE=${CSGO_GAME_TYPE}
       - CSGO_GAME_MODE=${CSGO_GAME_MODE}
       - CSGO_MAP_GROUP=${CSGO_MAP_GROUP}
       - CSGO_MAP=${CSGO_MAP}
     volumes:
-      - ./data:/home/steam/data
+      - ./data:/home/steam/steamcmd/data
       - ./server_start:/init/server_start
-      # ONLY REQUIRED FOR PEON
-      - ./status:/home/peon/status
-      - ./upload:/home/peon/upload
+      # PEON ONLY
+      - ./peon:/home/steam/peon
