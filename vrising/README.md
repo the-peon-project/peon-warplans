@@ -6,12 +6,8 @@ The PEON war plan that Peon uses to deploy your game server.
 
 ![V Rising](./logo.png)
 
-## Source
-
-[V Rising Deployment Guide](https://github.com/StunlockStudios/vrising-dedicated-server-instructions)
-
 ## Documentation
 
-If you would like info on how to use this plan, please go to the [Peon project game guide](http://docs.warcamp.org/guides/games/vrising/).
+If you would like info on how to use this plan, the up-to-date documentation can be found in the [PEON project game guide](http://docs.warcamp.org/guides/games/vrising/).
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K567ILJ)
