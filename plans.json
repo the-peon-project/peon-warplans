@@ -2,21 +2,21 @@
     {
         "title": "Counterstrike Global Offensive (CS:GO)",
         "game_uid": "csgo",
-        "plan_url" : "https://github.com/the-peon-project/peon-warplans/trunk/csgo"
+        "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/csgo"
     },
     {
         "title": "Valhiem",
         "game_uid": "valhiem",
-        "plan_url" : "https://github.com/the-peon-project/peon-warplans/trunk/valhiem"
+        "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/valhiem"
     },
     {
         "title": "V Rising",
         "game_uid": "vrising",
-        "plan_url" : "https://github.com/the-peon-project/peon-warplans/trunk/vrising"
+        "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/vrising"
     },
     {
         "title": "Starbound",
         "game_uid": "starbound",
-        "plan_url" : "https://github.com/the-peon-project/peon-warplans/trunk/starbound"
+        "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/starbound"
     }
 ]
