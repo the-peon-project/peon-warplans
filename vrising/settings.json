@@ -8,6 +8,10 @@
         "SERVERNAME"    : { "default" : "peon-warcamp", "value" : null, "optional" : false },
         "WORLDNAME"     : { "default" : "peon", "value" : null, "optional" : false },
         "PASSWORD"      : { "default" : "password", "value" : null, "optional" : false }
+    },    
+    "files" : {
+        "ServerGameSettings.json" : { "path" : "/home/steam/data/csgo/cfg/autoexec.cfg", "sample" : "/home/steam/steamcmd/data/VRisingServer_Data/StreamingAssets/Settings/ServerGameSettings.json", "default" : true},
+        "ServerHostSettings.json" : { "path" : "/home/steam/data/csgo/cfg/autoexec.cfg", "sample" : "/home/steam/steamcmd/data/VRisingServer_Data/StreamingAssets/Settings/ServerHostSettings.json", "default" : true}
     }
 }
 
