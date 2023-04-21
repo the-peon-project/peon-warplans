@@ -1,5 +1,4 @@
 #!/bin/bash
-rootpath="/home/steam/data"
-cd $rootpath
-echo "###### CS:GO Server [STARTING]"
+echo "###### Server CSGO.$SERVERNAME [STARTING]"
+cd $INSTALL_DIR
 ./srcds_run -game csgo -console -usercon +game_type $CSGO_GAME_TYPE +game_mode $CSGO_GAME_MODE +mapgroup $CSGO_MAP_GROUP +map $CSGO_MAP +sv_setsteamaccount $STEAM_GSLT
