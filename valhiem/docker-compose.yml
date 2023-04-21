@@ -5,9 +5,9 @@ services:
     hostname: peon.steamcmd.valhiem
     image: umlatt/steamcmd
     ports:
-      - 2456:2456
-      - 2457:2457
-      - 2458:2458
+      - 2456:2456/udp
+      - 2457:2457/udp
+      - 2458:2458/udp
     environment:
       - STEAMID=896660
       # GAME SERVER VARIABLES
