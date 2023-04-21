@@ -2,7 +2,7 @@
 
 The PEON war plan that Peon uses to deploy your game server.
 
-> **The official V Rising only has a Windows client. As such, the plan has been built on top of a steamcmd+winehq container**
+> **The official V Rising server is Windows only. As such, the plan has been built on top of a steamcmd+winehq container**
 
 ![V Rising](./logo.png)
 
