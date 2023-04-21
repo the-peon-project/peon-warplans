@@ -7,18 +7,18 @@ services:
     ports:
       - 2456:2456
       - 2457:2457
+      - 2458:2458
     environment:
       - STEAMID=896660
+      # GAME SERVER VARIABLES
       - PORT=${PORT}
-      - SERVER_IP=${SERVER_IP}
       - SERVERNAME=${SERVERNAME}
       - WORLDNAME=${WORLDNAME}
       - PASSWORD=${PASSWORD}
     volumes:
-      - ./data:/home/steam/data
+      - ./data:/home/steam/steamcmd/data
       - ./server_start:/init/server_start
+      - ./peon:/home/steam/peon
+      # VALHIEM CUSTOM
       - ./init_custom:/init/init_custom
-      # ONLY REQUIRED FOR PEON
-      - ./status:/home/peon/status
-      - ./upload:/home/peon/upload
-      - ./download:/home/peon/download
+      - ./download:/home/steam/.config/unity3d/IronGate/Valheim/worlds
