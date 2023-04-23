@@ -37,24 +37,22 @@ You can change any of the settings according to your needs.
 version: '3'
 services:
   server:
-    container_name: peon.warcamp.csgo.default
-    hostname: peon.warcamp.csgo
-    image: umlatt/steamcmd
+    container_name: peon.warcamp.vrising.${SERVERNAME}
+    hostname: peon.steamcmd.vrising
+    image: umlatt/steamcmd-winehq
     ports:
-      - 27015:27015/tcp
-      - 27015:27015/udp
-      - 37015:37015/tcp
-      - 37015:37015/udp
+      - 9876:9876/udp
+      - 9877:9877/udp
     environment:
-      - STEAMID=740
-      # GAME SERVER VARIABLES
-      - STEAM_GSLT=0
-      - CSGO_GAME_TYPE=0
-      - CSGO_GAME_MODE=0
-      - CSGO_MAP_GROUP="mg_active"
-      - CSGO_MAP="de_dust2"
+      - STEAMID=1829350
+      - PORT=9876
+      - QUERYPORT=9877
+      - SERVERNAME='the-vrising-server'
+      - WORLDNAME='worldname'
+      - PASSWORD='password'
     volumes:
       - ./data:/home/steam/steamcmd/data
-      - ./config:/home/steam/config
       - ./server_start:/init/server_start
+      - ./peon:/home/steam/config
+      - ./user:/home/steam/server_user_data
 ```

@@ -1,17 +1,31 @@
 {
     "metadata" : {
-        "gid" : "valhiem",
-        "version" : "1.0.0",
-        "mode" : "steamcmd"
+        "game_id"   : "vrising",
+        "version"   : "1.0.0",
+        "mode"      : "steamcmd-winehq",
+        "hostname"  : "peon.warcamp.vrising",
+        "image"     : "umlatt/steamcmd-winehq"
     },
-    "env_vars" : {
-        "SERVERNAME"    : { "default" : "peon-warcamp", "value" : null, "optional" : false },
-        "WORLDNAME"     : { "default" : "peon", "value" : null, "optional" : false },
-        "PASSWORD"      : { "default" : "password", "value" : null, "optional" : false }
-    },    
-    "files" : {
-        "ServerGameSettings.json" : { "path" : "/home/steam/data/csgo/cfg/autoexec.cfg", "sample" : "/home/steam/steamcmd/data/VRisingServer_Data/StreamingAssets/Settings/ServerGameSettings.json", "default" : true},
-        "ServerHostSettings.json" : { "path" : "/home/steam/data/csgo/cfg/autoexec.cfg", "sample" : "/home/steam/steamcmd/data/VRisingServer_Data/StreamingAssets/Settings/ServerHostSettings.json", "default" : true}
-    }
+    "ports" : [
+        [ { "type" : "udp", "value" : "9876"}, { "type" : "udp", "value" : "9877"} ]
+    ],
+    "environment" : [
+        { "key" :  "STEAM_ID"       , "value" : "1829350"    },
+        { "key" :  "PORT"           , "value" : "9876"       },
+        { "key" :  "QUERYPORT"      , "value" : "9877"       },
+        { "key" :  "SERVER_NAME"    , "value" : null         },
+        { "key" :  "WORLD_NAME"     , "value" : null         },
+        { "key" :  "PASSWORD"       , "value" : null         }
+    ],
+    "volumes" : [
+        { "key" : "./data"          , "value" : "/home/steam/steamcmd/data"     },
+        { "key" : "./config"        , "value" : "/home/steam/config"            },
+        { "key" : "./server_start"  , "value" : "/init/server_start"            },
+        { "key" : "./user"          , "value" : "/home/steam/server_user_data"  }
+    ],
+    "files" : [
+        { "key" : "ServerGameSettings.json" ,"set" : false,  "path" : "/home/steam/steamcmd/data/VRisingServer_Data/StreamingAssets/Settings/ServerGameSettings.json"},
+        { "key" : "ServerHostSettings.json" ,"set" : false,  "path" : "/home/steam/steamcmd/data/VRisingServer_Data/StreamingAssets/Settings/ServerHostSettings.json"}
+    ]
 }
 

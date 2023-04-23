@@ -22,8 +22,8 @@ For this guide, please make sure you have [Docker Compose](https://docs.docker.c
 2. Create a file `docker-compose.yml` in the directory with the contents below.
 3. Ensure that any scripts in the directory (i.e. `server_start`, `init_custom) are executable by the docker user.
     ```bash
-    chown 1000:1000 server_start init_custom
-    chmod u+x server_start init_custom
+    chown 1000:1000 server_start
+    chmod u+x server_start
     ```
 4. Start the server. You can now start the server with the following command `docker-compose up -d`/`docker compose up -d`. You can then follow the deployment using `docker logs --follow peon.warcamp.csgo.default`
 

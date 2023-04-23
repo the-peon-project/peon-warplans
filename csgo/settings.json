@@ -10,9 +10,9 @@
         [ { "type" : "tcp/udp", "value" : "27015"}, { "type" : "tcp/udp", "value" : "37015"} ]
     ],
     "environment" : [
+        { "key" :  "STEAM_ID"       , "value" : "740"        },
         { "key" :  "PORT_GAME"       , "value" : "27015"     },
         { "key" :  "PORT_RCON"       , "value" : "37015"     },
-        { "key" :  "STEAM_ID"       , "value" : "740"        },
         { "key" :  "SERVER_NAME"    , "value" : null         },
         { "key" :  "STEAM_GSLT"     , "value" : null         },
         { "key" :  "CSGO_GAME_TYPE" , "value" : "0"          },
@@ -26,10 +26,10 @@
         { "key" : "./server_start"  , "value" : "/init/server_start"        }
     ],
     "files" : [
-        { "key" : "autoexec.cfg"          ,"set" : false,  "path" : "/home/steam/data/csgo/cfg/autoexec.cfg",      "sample" : false },
-        { "key" : "server.cfg"            ,"set" : false,  "path" : "/home/steam/data/csgo/cfg/server.cfg",        "sample" : false },
-        { "key" : "gamemodes.txt"         ,"set" : false,  "path" : "/home/steam/data/csgo/gamemodes.txt",         "sample" : true  },
-        { "key" : "gamemodes_server.txt"  ,"set" : false,  "path" : "/home/steam/data/csgo/gamemodes_server.txt",  "sample" : true  }
+        { "key" : "autoexec.cfg"          ,"set" : false,  "path" : "/home/steam/data/csgo/cfg/autoexec.cfg"        },
+        { "key" : "server.cfg"            ,"set" : false,  "path" : "/home/steam/data/csgo/cfg/server.cfg"          },
+        { "key" : "gamemodes.txt"         ,"set" : false,  "path" : "/home/steam/data/csgo/gamemodes.txt"           },
+        { "key" : "gamemodes_server.txt"  ,"set" : false,  "path" : "/home/steam/data/csgo/gamemodes_server.txt"    }
     ]
 }
 

@@ -3,18 +3,17 @@
         "game_id"   : "valhiem",
         "version"   : "1.0.0",
         "mode"      : "steamcmd",
-        "hostname"  : "peon.steamcmd.valhiem",
+        "hostname"  : "peon.warcamp.valhiem",
         "image"     : "umlatt/steamcmd"
     },
     "ports" : [
-        [ { "type" : "udp", "value" : "2456"}, { "type" : "udp", "value" : "2457"}, { "type" : "udp", "value" : "2458"}
-        ]
+        [ { "type" : "udp", "value" : "2456"}, { "type" : "udp", "value" : "2457"}, { "type" : "udp", "value" : "2458"} ]
     ],
     "environment" : [
-        { "key" :  "PORT"           , "value" : "2456"      },
         { "key" :  "STEAM_ID"       , "value" : "896660"    },
+        { "key" :  "PORT"           , "value" : "2456"      },
         { "key" :  "SERVER_NAME"    , "value" : null        },
-        { "key" :  "WORLDNAME"      , "value" : null        },
+        { "key" :  "WORLD_NAME"     , "value" : null        },
         { "key" :  "PASSWORD"       , "value" : null        }
     ],
     "volumes" : [
