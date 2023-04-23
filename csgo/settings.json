@@ -1,21 +1,27 @@
 {
     "metadata" : {
-        "gid" : "csgo",
-        "version" : "1.0.0",
-        "mode" : "steamcmd"
+        "game_id"   : "csgo",
+        "version"   : "1.0.0",
+        "mode"      : "steamcmd"
     },
-    "env_vars" : {
-        "STEAM_GSLT"     : { "default" : 0,             "value" : null, "optional" : true },
-        "CSGO_GAME_TYPE" : { "default" : 0,             "value" : null, "optional" : true },
-        "CSGO_GAME_MODE" : { "default" : 0,             "value" : null, "optional" : true },
-        "CSGO_MAP_GROUP" : { "default" : "mg_active",   "value" : null, "optional" : true },
-        "CSGO_MAP"       : { "default" : "de_dust2",    "value" : null, "optional" : true }
-    },
-    "files" : {
-        "autoexec.cfg"          : { "path" : "/home/steam/data/csgo/cfg/autoexec.cfg", "sample" : null, "default" : true},
-        "server.cfg"            : { "path" : "/home/steam/data/csgo/cfg/server.cfg", "sample" : null,  "default" : true},
-        "gamemodes.txt"         : { "path" : "/home/steam/data/csgo/gamemodes.txt", "sample" : "/home/steam/data/csgo/gamemodes.txt",  "default" : true},
-        "gamemodes_server.txt"  : { "path" : "/home/steam/data/csgo/gamemodes_server.txt", "sample" : "/home/steam/data/csgo/gamemodes_server.txt.example",  "default" : true}
-    }
+    "ports" : [
+        [ 
+            { "key" : "PORT_GAME", "type" : "tcp/udp", "value" : "27015"}, 
+            { "key" : "PORT_RCON", "type" : "tcp/udp", "value" : "37015"} 
+        ]
+    ],
+    "env_vars" : [
+        { "key" :  "STEAM_GSLT"     , "value" : 0            },
+        { "key" :  "CSGO_GAME_TYPE" , "value" : 0            },
+        { "key" :  "CSGO_GAME_MODE" , "value" : 0            },
+        { "key" :  "CSGO_MAP_GROUP" , "value" : "mg_active"  },
+        { "key" :  "CSGO_MAP"       , "value" : "de_dust2"   } 
+    ],
+    "files" : [
+        { "key" : "autoexec.cfg"          ,"set" : false,  "path" : "/home/steam/data/csgo/cfg/autoexec.cfg",      "sample" : false },
+        { "key" : "server.cfg"            ,"set" : false,  "path" : "/home/steam/data/csgo/cfg/server.cfg",        "sample" : false },
+        { "key" : "gamemodes.txt"         ,"set" : false,  "path" : "/home/steam/data/csgo/gamemodes.txt",         "sample" : true  },
+        { "key" : "gamemodes_server.txt"  ,"set" : false,  "path" : "/home/steam/data/csgo/gamemodes_server.txt",  "sample" : true  }
+    ]
 }
 
