@@ -2,7 +2,9 @@
     "metadata" : {
         "game_id"   : "csgo",
         "version"   : "1.0.0",
-        "mode"      : "steamcmd"
+        "mode"      : "steamcmd",
+        "hostname"  : "peon.steamcmd.csgo",
+        "image"     : "umlatt/steamcmd"
     },
     "ports" : [
         [ 
@@ -10,13 +12,19 @@
             { "key" : "PORT_RCON", "type" : "tcp/udp", "value" : "37015"} 
         ]
     ],
-    "env_vars" : [
+    "environment" : [
+        { "key" :  "STEAM_ID"       , "value" : "740"        },
         { "key" :  "SERVER_NAME"    , "value" : null         },
         { "key" :  "STEAM_GSLT"     , "value" : null         },
         { "key" :  "CSGO_GAME_TYPE" , "value" : "0"          },
         { "key" :  "CSGO_GAME_MODE" , "value" : "0"          },
         { "key" :  "CSGO_MAP_GROUP" , "value" : "mg_active"  },
         { "key" :  "CSGO_MAP"       , "value" : "de_dust2"   } 
+    ],
+    "volumes" : [
+        { "key" : "./data"          , "value" : "/home/steam/steamcmd/data" },
+        { "key" : "./config"        , "value" : "/home/steam/config"        },
+        { "key" : "./server_start"  , "value" : "/init/server_start"        }
     ],
     "files" : [
         { "key" : "autoexec.cfg"          ,"set" : false,  "path" : "/home/steam/data/csgo/cfg/autoexec.cfg",      "sample" : false },
