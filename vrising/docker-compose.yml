@@ -17,6 +17,5 @@ services:
     volumes:
       - ./data:/home/steam/steamcmd/data
       - ./server_start:/init/server_start
-      - ./peon:/home/steam/peon
-      # VRISING CUSTOM
+      - ./peon:/home/steam/config
       - ./user:/home/steam/peon_user_data

@@ -17,8 +17,7 @@ services:
       - PASSWORD=${PASSWORD}
     volumes:
       - ./data:/home/steam/steamcmd/data
-      - ./server_start:/init/server_start
-      - ./peon:/home/steam/peon
-      # VALHIEM CUSTOM
+      - ./config:/home/steam/config
       - ./init_custom:/init/init_custom
+      - ./server_start:/init/server_start
       - ./user:/home/steam/.config/unity3d/IronGate/Valheim
