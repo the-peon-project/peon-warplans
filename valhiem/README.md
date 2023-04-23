@@ -19,11 +19,11 @@ This recipe can be used without the wider PEON project components.
 For this guide, please make sure you have [Docker Compose](https://docs.docker.com.zh.xy2401.com/v17.12/compose/install/) installed and running.
 
 1. Download this folder and its contents.
-2. Create a file `docker-compose.yml` in the directory with the contents as below.
+2. Create a file `docker-compose.yml` in the directory with the contents below.
 3. Ensure that any scripts in the directory (i.e. `server_start`, `init_custom) are executable by the docker user.
     ```bash
-    chown 1000:1000 server_start
-    chmod u+x server_start
+    chown 1000:1000 server_start init_custom
+    chmod u+x server_start init_custom
     ```
 4. Start the server. You can now start the server with the following command `docker-compose up -d`/`docker compose up -d`. You can then follow the deployment using `docker logs --follow peon.warcamp.csgo.default`
 
@@ -35,24 +35,24 @@ You can change any of the settings according to your needs.
 version: '3'
 services:
   server:
-    container_name: peon.warcamp.csgo.default
-    hostname: peon.warcamp.csgo
+    container_name: peon.warcamp.valhiem.default
+    hostname: peon.steamcmd.valhiem
     image: umlatt/steamcmd
     ports:
-      - 27015:27015/tcp
-      - 27015:27015/udp
-      - 37015:37015/tcp
-      - 37015:37015/udp
+      - 2456:2456/udp
+      - 2457:2457/udp
+      - 2458:2458/udp
     environment:
-      - STEAMID=740
+      - STEAMID=896660
       # GAME SERVER VARIABLES
-      - STEAM_GSLT=0
-      - CSGO_GAME_TYPE=0
-      - CSGO_GAME_MODE=0
-      - CSGO_MAP_GROUP="mg_active"
-      - CSGO_MAP="de_dust2"
+      - PORT=2456
+      - SERVERNAME="my-valhiem-server"
+      - WORLDNAME="my-valhiem-world"
+      - PASSWORD="some-password"
     volumes:
       - ./data:/home/steam/steamcmd/data
       - ./config:/home/steam/config
+      - ./init_custom:/init/init_custom
       - ./server_start:/init/server_start
+      - ./user:/home/steam/.config/unity3d/IronGate/Valheim
 ```
