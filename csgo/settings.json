@@ -11,9 +11,10 @@
         ]
     ],
     "env_vars" : [
-        { "key" :  "STEAM_GSLT"     , "value" : 0            },
-        { "key" :  "CSGO_GAME_TYPE" , "value" : 0            },
-        { "key" :  "CSGO_GAME_MODE" , "value" : 0            },
+        { "key" :  "SERVER_NAME"    , "value" : null         },
+        { "key" :  "STEAM_GSLT"     , "value" : null         },
+        { "key" :  "CSGO_GAME_TYPE" , "value" : "0"          },
+        { "key" :  "CSGO_GAME_MODE" , "value" : "0"          },
         { "key" :  "CSGO_MAP_GROUP" , "value" : "mg_active"  },
         { "key" :  "CSGO_MAP"       , "value" : "de_dust2"   } 
     ],
