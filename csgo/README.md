@@ -20,7 +20,7 @@ For this guide, please make sure you have [Docker Compose](https://docs.docker.c
 
 1. Download this folder and its contents.
 2. Create a file `docker-compose.yml` in the directory with the contents as below.
-3. Ensure that any scripts in the directory (i.e. `server_start`, `init_custom) are executable by the docker user.
+3. Ensure that any scripts in the directory (i.e. `server_start`, `init_custom`) are executable by the docker user.
     ```bash
     chown 1000:1000 server_start
     chmod u+x server_start
