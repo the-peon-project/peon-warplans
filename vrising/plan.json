@@ -1,7 +1,7 @@
 {
     "metadata" : {
         "game_id"       : "vrising",
-        "server_name"   : "default",
+        "warcamp"       : "default",
         "version"       : "1.0.0",
         "description"   : "A PEON game server.",
         "mode"          : "steamcmd-winehq",
