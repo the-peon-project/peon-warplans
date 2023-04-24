@@ -9,23 +9,23 @@
         "image"         : "umlatt/steamcmd-winehq"
     },
     "ports" : [
-        [ { "key" : "PORT", "type" : "udp", "value" : "9876"}, { "key" : "QUERYPORT","type" : "udp", "value" : "9877"} ]
+        [ { "PORT" : ["9876", "udp"] }, { "QUERYPORT" : ["9877", "udp"] } ]
     ],
-    "environment" : [
-        { "key" :  "STEAM_ID"       , "value" : "1829350"    },
-        { "key" :  "SERVER_NAME"    , "value" : null         },
-        { "key" :  "WORLD_NAME"     , "value" : null         },
-        { "key" :  "PASSWORD"       , "value" : null         }
-    ],
-    "volumes" : [
-        { "key" : "./data"          , "value" : "/home/steam/steamcmd/data"     },
-        { "key" : "./config"        , "value" : "/home/steam/config"            },
-        { "key" : "./server_start"  , "value" : "/init/server_start"            },
-        { "key" : "./user"          , "value" : "/home/steam/server_user_data"  }
-    ],
-    "files" : [
-        { "key" : "ServerGameSettings.json" ,"set" : false,  "path" : "/home/steam/steamcmd/data/VRisingServer_Data/StreamingAssets/Settings/ServerGameSettings.json"},
-        { "key" : "ServerHostSettings.json" ,"set" : false,  "path" : "/home/steam/steamcmd/data/VRisingServer_Data/StreamingAssets/Settings/ServerHostSettings.json"}
-    ]
+    "environment" : {
+        "STEAM_ID"       : "1829350",
+        "SERVER_NAME"    : null     ,
+        "WORLD_NAME"     : null     ,
+        "PASSWORD"       : null      
+    },
+    "volumes" : {
+        "data"          : "/home/steam/steamcmd/data"   ,
+        "config"        : "/home/steam/config"          ,
+        "user"          : "/home/steam/server_user_data",
+        "server_start"  : "/init/server_start"
+    },
+    "files" : {
+        "ServerGameSettings.json" : { "mount" : false , "path" : "/home/steam/steamcmd/data/VRisingServer_Data/StreamingAssets/Settings/ServerGameSettings.json"},
+        "ServerHostSettings.json" : { "mount" : false , "path" : "/home/steam/steamcmd/data/VRisingServer_Data/StreamingAssets/Settings/ServerHostSettings.json"}
+    }
 }
 
