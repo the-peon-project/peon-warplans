@@ -1,10 +1,11 @@
 {
     "metadata" : {
-        "game_id"   : "csgo",
-        "version"   : "1.0.0",
-        "mode"      : "steamcmd",
-        "hostname"  : "peon.steamcmd.csgo",
-        "image"     : "umlatt/steamcmd"
+        "game_id"       : "csgo",
+        "server_name"   : "default",
+        "version"       : "1.0.0",
+        "mode"          : "steamcmd",
+        "hostname"      : "peon.steamcmd.csgo",
+        "image"         : "umlatt/steamcmd"
     },
     "ports" : [
         [ { "type" : "tcp/udp", "value" : "27015"}, { "type" : "tcp/udp", "value" : "37015"} ]

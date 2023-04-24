@@ -1,10 +1,11 @@
 {
     "metadata" : {
-        "game_id"   : "vrising",
-        "version"   : "1.0.0",
-        "mode"      : "steamcmd-winehq",
-        "hostname"  : "peon.warcamp.vrising",
-        "image"     : "umlatt/steamcmd-winehq"
+        "game_id"       : "vrising",
+        "server_name"   : "default",
+        "version"       : "1.0.0",
+        "mode"          : "steamcmd-winehq",
+        "hostname"      : "peon.warcamp.vrising",
+        "image"         : "umlatt/steamcmd-winehq"
     },
     "ports" : [
         [ { "type" : "udp", "value" : "9876"}, { "type" : "udp", "value" : "9877"} ]

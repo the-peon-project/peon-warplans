@@ -1,10 +1,11 @@
 {
     "metadata" : {
-        "game_id"   : "valhiem",
-        "version"   : "1.0.0",
-        "mode"      : "steamcmd",
-        "hostname"  : "peon.warcamp.valhiem",
-        "image"     : "umlatt/steamcmd"
+        "game_id"       : "valhiem",
+        "server_name"   : "default",
+        "version"       : "1.0.0",
+        "mode"          : "steamcmd",
+        "hostname"      : "peon.warcamp.valhiem",
+        "image"         : "umlatt/steamcmd"
     },
     "ports" : [
         [ { "type" : "udp", "value" : "2456"}, { "type" : "udp", "value" : "2457"}, { "type" : "udp", "value" : "2458"} ]
