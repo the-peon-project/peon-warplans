@@ -1,7 +1,7 @@
 {
     "metadata" : {
         "game_id"       : "csgo",
-        "server_name"   : "default",
+        "server_name"   : null,
         "description"   : "A PEON game server.",
         "version"       : "1.0.0",
         "mode"          : "steamcmd",
