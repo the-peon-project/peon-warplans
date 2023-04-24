@@ -9,11 +9,12 @@
         "image"         : "umlatt/steamcmd"
     },
     "ports" : [
-        [ { "type" : "udp", "value" : "2456"}, { "type" : "udp", "value" : "2457"}, { "type" : "udp", "value" : "2458"} ]
+        [ { "key" : "PORT", "type" : "udp", "value" : "2456"} ],
+        [ { "key" : "PORT", "type" : "udp", "value" : "2457"} ], 
+        [ { "key" : "PORT", "type" : "udp", "value" : "2458"} ]
     ],
     "environment" : [
         { "key" :  "STEAM_ID"       , "value" : "896660"    },
-        { "key" :  "PORT"           , "value" : "2456"      },
         { "key" :  "SERVER_NAME"    , "value" : null        },
         { "key" :  "WORLD_NAME"     , "value" : null        },
         { "key" :  "PASSWORD"       , "value" : null        }

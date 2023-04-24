@@ -9,12 +9,10 @@
         "image"         : "umlatt/steamcmd"
     },
     "ports" : [
-        [ { "type" : "tcp/udp", "value" : "27015"}, { "type" : "tcp/udp", "value" : "37015"} ]
+        [ { "key" : "PORT_GAME", "type" : "tcp/udp", "value" : "27015"}, {  "key" : "PORT_RCON", "type" : "tcp/udp", "value" : "37015"} ]
     ],
     "environment" : [
         { "key" :  "STEAM_ID"       , "value" : "740"        },
-        { "key" :  "PORT_GAME"      , "value" : "27015"     },
-        { "key" :  "PORT_RCON"      , "value" : "37015"     },
         { "key" :  "SERVER_NAME"    , "value" : null         },
         { "key" :  "STEAM_GSLT"     , "value" : null         },
         { "key" :  "CSGO_GAME_TYPE" , "value" : "0"          },
