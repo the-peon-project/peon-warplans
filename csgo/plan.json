@@ -2,6 +2,7 @@
     "metadata" : {
         "game_id"       : "csgo",
         "server_name"   : "default",
+        "description"   : "A PEON game server.",
         "version"       : "1.0.0",
         "mode"          : "steamcmd",
         "hostname"      : "peon.steamcmd.csgo",
@@ -12,8 +13,8 @@
     ],
     "environment" : [
         { "key" :  "STEAM_ID"       , "value" : "740"        },
-        { "key" :  "PORT_GAME"       , "value" : "27015"     },
-        { "key" :  "PORT_RCON"       , "value" : "37015"     },
+        { "key" :  "PORT_GAME"      , "value" : "27015"     },
+        { "key" :  "PORT_RCON"      , "value" : "37015"     },
         { "key" :  "SERVER_NAME"    , "value" : null         },
         { "key" :  "STEAM_GSLT"     , "value" : null         },
         { "key" :  "CSGO_GAME_TYPE" , "value" : "0"          },

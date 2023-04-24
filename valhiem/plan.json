@@ -2,6 +2,7 @@
     "metadata" : {
         "game_id"       : "valhiem",
         "server_name"   : "default",
+        "description"   : "A PEON game server.",
         "version"       : "1.0.0",
         "mode"          : "steamcmd",
         "hostname"      : "peon.warcamp.valhiem",

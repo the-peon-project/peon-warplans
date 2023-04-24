@@ -3,6 +3,7 @@
         "game_id"       : "vrising",
         "server_name"   : "default",
         "version"       : "1.0.0",
+        "description"   : "A PEON game server.",
         "mode"          : "steamcmd-winehq",
         "hostname"      : "peon.warcamp.vrising",
         "image"         : "umlatt/steamcmd-winehq"
