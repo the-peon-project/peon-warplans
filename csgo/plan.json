@@ -1,6 +1,6 @@
 {
     "metadata" : {
-        "game_id"       : "csgo",
+        "game_uid"       : "csgo",
         "server_name"   : "default",
         "version"       : "1.0.0",
         "description"   : "A PEON game server.",

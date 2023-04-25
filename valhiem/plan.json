@@ -1,6 +1,6 @@
 {
     "metadata" : {
-        "game_id"       : "valhiem",
+        "game_uid"       : "valhiem",
         "warcamp"       : "default",
         "version"       : "1.0.0",
         "description"   : "A PEON game server.",
