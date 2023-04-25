@@ -24,8 +24,8 @@
         "server_start"  : "/init/server_start"
     },
     "files" : {
-        "ServerGameSettings.json" : { "mount" : false , "path" : "/home/steam/steamcmd/data/VRisingServer_Data/StreamingAssets/Settings/ServerGameSettings.json"},
-        "ServerHostSettings.json" : { "mount" : false , "path" : "/home/steam/steamcmd/data/VRisingServer_Data/StreamingAssets/Settings/ServerHostSettings.json"}
+        "ServerGameSettings.json" : "/home/steam/steamcmd/data/VRisingServer_Data/StreamingAssets/Settings/ServerGameSettings.json",
+        "ServerHostSettings.json" : "/home/steam/steamcmd/data/VRisingServer_Data/StreamingAssets/Settings/ServerHostSettings.json"
     }
 }
 
