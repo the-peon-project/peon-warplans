@@ -12,7 +12,9 @@
         [ { "PORT" : ["27960","tcp/udp"] }]
     ],
     "environment" : {
-        "STEAM_ID"       : "2200"
+        "STEAM_ID"       : "2200",
+        "STEAM_USER"     : null,
+        "STEAM_PASSWORD" : null
     },
     "volumes" : {
         "./data"          : "/home/steam/steamcmd/data",
