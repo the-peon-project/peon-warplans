@@ -3,7 +3,7 @@
         "game_uid"       : "csgo",
         "server_name"   : "default",
         "version"       : "1.0.0",
-        "description"   : "A PEON game server.",
+        "description"   : "A PEON csgo game server.",
         "mode"          : "steamcmd",
         "hostname"      : "peon.steamcmd.csgo",
         "image"         : "umlatt/steamcmd"

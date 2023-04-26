@@ -1,9 +1,9 @@
 {
     "metadata" : {
-        "game_uid"       : "valhiem",
+        "game_uid"      : "valhiem",
         "warcamp"       : "default",
         "version"       : "1.0.0",
-        "description"   : "A PEON game server.",
+        "description"   : "A PEON valhiem game server.",
         "mode"          : "steamcmd",
         "hostname"      : "peon.warcamp.valhiem",
         "image"         : "umlatt/steamcmd"
@@ -13,17 +13,17 @@
             [ { "PORT" : ["2457", "udp"] } ],
             [ { "PORT" : ["2458", "udp"] } ]
     ],
-    "environment" : [
-        { "STEAM_ID"       : "896660"    },
-        { "SERVER_NAME"    : null        },
-        { "WORLD_NAME"     : null        },
-        { "PASSWORD"       : null        }
-    ],
-    "volumes" : [
-        { "./data"          : "/home/steam/steamcmd/data"                     },
-        { "./config"        : "/home/steam/config"                            },
-        { "./user"          : "/home/steam/.config/unity3d/IronGate/Valheim"  },
-        { "./init_custom"   : "/init/custom"                                  },
-        { "./server_start"  : "/init/server_start"                            }
-    ]
+    "environment" : {
+        "STEAM_ID"       : "896660",
+        "SERVER_NAME"    : null,
+        "WORLD_NAME"     : null,
+        "PASSWORD"       : null
+    },
+    "volumes" : {
+        "./data"          : "/home/steam/steamcmd/data"                     ,
+        "./config"        : "/home/steam/config"                            ,
+        "./user"          : "/home/steam/.config/unity3d/IronGate/Valheim"  ,
+        "./init_custom"   : "/init/custom"                                  ,
+        "./server_start"  : "/init/server_start"                            
+    }
 }
