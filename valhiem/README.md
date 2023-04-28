@@ -1,12 +1,12 @@
-# Peon War Plan - Valhiem
+# Peon War Plan - Valheim
 
 The PEON war plan that Peon uses to deploy your game server.
 
-![Valhiem](./logo.png)
+![Valheim](./logo.png)
 
 ## Documentation
 
-If you would like info on how to use this plan, the up-to-date documentation can be found in the [PEON project game guide](http://docs.warcamp.org/guides/games/valhiem/).
+If you would like info on how to use this plan, the up-to-date documentation can be found in the [PEON project game guide](http://docs.warcamp.org/guides/games/valheim/).
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K567ILJ)
 
@@ -35,8 +35,8 @@ You can change any of the settings according to your needs.
 version: '3'
 services:
   server:
-    container_name: peon.warcamp.valhiem.default
-    hostname: peon.steamcmd.valhiem
+    container_name: peon.warcamp.valheim.default
+    hostname: peon.steamcmd.valheim
     image: umlatt/steamcmd
     ports:
       - 2456:2456/udp
@@ -46,8 +46,8 @@ services:
       - STEAMID=896660
       # GAME SERVER VARIABLES
       - PORT=2456
-      - SERVERNAME="my-valhiem-server"
-      - WORLDNAME="my-valhiem-world"
+      - SERVERNAME="my-valheim-server"
+      - WORLDNAME="my-valheim-world"
       - PASSWORD="some-password"
     volumes:
       - ./data:/home/steam/steamcmd/data

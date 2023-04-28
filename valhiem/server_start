@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "###### Server Valhiem.$SERVER_NAME [STARTING]"
+echo "###### Server Valheim.$SERVER_NAME [STARTING]"
 cd $INSTALL_DIR
 
 ##### CONTENTS OF server_start.sh
