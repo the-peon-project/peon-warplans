@@ -6,10 +6,10 @@
         "description"   : "A PEON quake3 game server.",
         "mode"          : "steamcmd",
         "hostname"      : "peon.steamcmd.quake3",
-        "image"         : "umlatt/steamcmd"
+        "image"         : "ich777/ioquake3"
     },
     "ports" : [
-        [ { "PORT" : ["27960","tcp/udp"] }]
+        [ { "PORT" : ["27960","tcp/udp"] }, { "PORT" : ["8080","tcp/udp"] }]
     ],
     "environment" : {
         "STEAM_ID"       : "2200",

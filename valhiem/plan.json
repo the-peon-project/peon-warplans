@@ -1,11 +1,11 @@
 {
     "metadata" : {
-        "game_uid"      : "valhiem",
+        "game_uid"      : "valheim",
         "warcamp"       : "default",
         "version"       : "1.0.0",
-        "description"   : "A PEON valhiem game server.",
+        "description"   : "A PEON valheim game server.",
         "mode"          : "steamcmd",
-        "hostname"      : "peon.warcamp.valhiem",
+        "hostname"      : "peon.warcamp.valheim",
         "image"         : "umlatt/steamcmd"
     },
     "ports" : [
