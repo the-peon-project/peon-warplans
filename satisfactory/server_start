@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "###### Server Satisfactory.$SERVER_NAME [STARTING]"
+cd $INSTALL_DIR
+
+##### CONTENTS OF server_start.sh
+export templdpath=$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=./linux64:$LD_LIBRARY_PATH
+export SteamAppId=892970
+
+./FactoryServer.sh -ServerQueryPort=$QUERYPORT -BeaconPort=$BEACONPORT -Port=$PORT 
+
+export LD_LIBRARY_PATH=$templdpath
