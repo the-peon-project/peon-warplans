@@ -1,4 +1,4 @@
-# Peon War Plan - Valheim
+# Peon War Plan - Satisfactory
 
 The PEON war plan that Peon uses to deploy your game server.
 
