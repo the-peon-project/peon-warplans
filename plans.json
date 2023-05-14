@@ -15,6 +15,11 @@
         "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/vrising"
     },
     {
+        "title": "Satisfactory",
+        "game_uid": "satisfactory",
+        "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/satisfactory"
+    },
+    {
         "title": "Starbound",
         "game_uid": "starbound",
         "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/starbound"
