@@ -23,7 +23,6 @@
         "./scripts"       : "/init/scripts",
         "./data"          : "/home/steam/steamcmd/data"                     ,
         "./config"        : "/home/steam/config"                            ,
-        "./user"          : "/home/steam/.config/unity3d/IronGate/Valheim"  ,
-        "./init_custom"   : "/init/custom"                                  
+        "./user"          : "/home/steam/.config/unity3d/IronGate/Valheim"                                 
     }
 }
