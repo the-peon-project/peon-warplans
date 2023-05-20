@@ -20,10 +20,10 @@
         "PASSWORD"       : null
     },
     "volumes" : {
+        "./scripts"       : "/init/scripts",
         "./data"          : "/home/steam/steamcmd/data"                     ,
         "./config"        : "/home/steam/config"                            ,
         "./user"          : "/home/steam/.config/unity3d/IronGate/Valheim"  ,
-        "./init_custom"   : "/init/custom"                                  ,
-        "./server_start"  : "/init/server_start"                            
+        "./init_custom"   : "/init/custom"                                  
     }
 }
