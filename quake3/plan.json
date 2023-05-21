@@ -17,7 +17,7 @@
         "STEAM_PASSWORD" : null
     },
     "volumes" : {
-        "~!/scripts"       : "/init/scripts",
+        "~!/actions"       : "/actions",
         "~!/data"          : "/home/steam/steamcmd/data",
         "~!/config"        : "/home/steam/config"
     }

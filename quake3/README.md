@@ -25,7 +25,7 @@ For this guide, please make sure you have [Docker Compose](https://docs.docker.c
     chown 1000:1000 server_start
     chmod u+x server_start
     ```
-4. Start the server. You can now start the server with the following command `docker-compose up -d`/`docker compose up -d`. You can then follow the deployment using `docker logs --follow peon.warcamp.csgo.default`
+4. Start the server. You can now start the server with the following command `docker-compose up -d`/`docker compose up -d`. You can then follow the deployment using `docker-compose logs -f`
 
 #### docker-compose.yml
 
@@ -52,7 +52,7 @@ services:
       - CSGO_MAP_GROUP="mg_active"
       - CSGO_MAP="de_dust2"
     volumes:
+      - ./actions:/actions
       - ./data:/home/steam/steamcmd/data
       - ./config:/home/steam/config
-      - ./server_start:/init/server_start
 ```

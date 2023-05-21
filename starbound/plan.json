@@ -15,9 +15,9 @@
         "STEAM_ID"       : "533830"
     },
     "volumes" : {
-        "~!/actions"       : "/actions",
-        "~!/config"        : "/home/steam/config"                            ,
+        "~!/actions"       : "/actions"                                      ,
         "~!/data"          : "/home/steam/steamcmd/data"                     ,
+        "~!/config"        : "/home/steam/config"                            ,
         "~!/user"          : "/home/steam/.config"                                 
     }
 }

@@ -25,7 +25,7 @@ For this guide, please make sure you have [Docker Compose](https://docs.docker.c
     chown 1000:1000 server_start
     chmod u+x server_start
     ```
-4. Start the server. You can now start the server with the following command `docker-compose up -d`/`docker compose up -d`. You can then follow the deployment using `docker logs --follow peon.warcamp.csgo.default`
+4. Start the server. You can now start the server with the following command `docker-compose up -d`/`docker compose up -d`. You can then follow the deployment using `docker-compose logs -f`
 
 #### docker-compose.yml
 
@@ -47,8 +47,8 @@ services:
       # GAME SERVER VARIABLES
       - SERVER_NAME=server01
     volumes:
+      - ./actions:/actions
       - ./data:/home/steam/steamcmd/data
       - ./config:/home/steam/config
-      - ./server_start:/init/server_start
       - ./user:/home/steam/.config/Epic/FactoryGame/Saved/SaveGames
 ```
