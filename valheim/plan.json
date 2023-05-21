@@ -21,8 +21,8 @@
     },
     "volumes" : {
         "./actions"       : "/actions",
-        "./data"          : "/home/steam/steamcmd/data"                     ,
         "./config"        : "/home/steam/config"                            ,
+        "./data"          : "/home/steam/steamcmd/data"                     ,
         "./user"          : "/home/steam/.config/unity3d/IronGate/Valheim"                                 
     }
 }
