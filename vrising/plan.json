@@ -18,14 +18,14 @@
         "PASSWORD"       : null      
     },
     "volumes" : {
-        "./scripts"       : "/init/scripts",
-        "./data"          : "/home/steam/steamcmd/data"   ,
-        "./config"        : "/home/steam/config"          ,
-        "./user"          : "/home/steam/server_user_data"
+        "~!/scripts"       : "/init/scripts",
+        "~!/data"          : "/home/steam/steamcmd/data"   ,
+        "~!/config"        : "/home/steam/config"          ,
+        "~!/user"          : "/home/steam/server_user_data"
     },
     "files" : {
-        "ServerGameSettings.json" : "/home/steam/steamcmd/data/VRisingServer_Data/StreamingAssets/Settings/ServerGameSettings.json",
-        "ServerHostSettings.json" : "/home/steam/steamcmd/data/VRisingServer_Data/StreamingAssets/Settings/ServerHostSettings.json"
+        "~!/ServerGameSettings.json" : "/home/steam/steamcmd/data/VRisingServer_Data/StreamingAssets/Settings/ServerGameSettings.json",
+        "~!/ServerHostSettings.json" : "/home/steam/steamcmd/data/VRisingServer_Data/StreamingAssets/Settings/ServerHostSettings.json"
     }
 }
 
