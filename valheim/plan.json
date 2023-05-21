@@ -20,9 +20,9 @@
         "PASSWORD"       : null
     },
     "volumes" : {
-        "~!/actions"       : "/actions",
-        "~!/data"          : "/home/steam/steamcmd/data"                     ,
-        "~!/config"        : "/home/steam/config"                            ,
-        "~!/user"          : "/home/steam/.config/unity3d/IronGate/Valheim"                                 
+        "./actions"       : "/actions",
+        "./data"          : "/home/steam/steamcmd/data"                     ,
+        "./config"        : "/home/steam/config"                            ,
+        "./user"          : "/home/steam/.config/unity3d/IronGate/Valheim"                                 
     }
 }
