@@ -16,6 +16,6 @@ export SteamAppId=892970
 # NOTE: Minimum password length is 5 characters & Password cant be in the server name.
 # NOTE: You need to make sure the ports 2456-2458 is being forwarded to your server through your local router & firewall
 
-./ShooterGameServer TheIsland?listen?SessionName=$SERVER_NAME?ServerPassword=$PASSWORD?ServerAdminPassword=$ADMIN_PASSWORD -server -log
+./ShooterGame/Binaries/Linux/ShooterGameServer TheIsland?listen?SessionName=$SERVER_NAME?ServerPassword=$PASSWORD?ServerAdminPassword=$ADMIN_PASSWORD -server -log
 
 export LD_LIBRARY_PATH=$templdpath
