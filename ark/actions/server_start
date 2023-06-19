@@ -5,7 +5,6 @@ cd $INSTALL_DIR
 echo $PORT > /home/steam/config/port
 echo $RCON > /home/steam/config/rcon
 echo $SERVER_NAME > /home/steam/config/server_name 
-echo $WORLD_NAME > /home/steam/config/world_name
 echo $PASSWORD > /home/steam/config/password
 
 ##### CONTENTS OF server_start.sh
