@@ -23,5 +23,10 @@
         "title": "Starbound",
         "game_uid": "starbound",
         "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/starbound"
+    },
+    {
+        "title": "Ark",
+        "game_uid": "ark",
+        "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/ark"
     }
 ]
