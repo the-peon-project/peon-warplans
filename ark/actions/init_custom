@@ -3,7 +3,8 @@ echo "##### Updating repo"
 apt-get update
 echo "##### Processing additional dependancies [Ark]"
 echo " > Setting max file limits"
-echo "fs.file-max=100000" >> sysctl -p /etc/sysctl.conf
+echo "fs.file-max=100000" >> /etc/sysctl.conf
+sysctl -p /etc/sysctl.conf
 echo "*               soft    nofile          1000000" >> /etc/security/limits.conf
 echo "*               hard    nofile          1000000" >> /etc/security/limits.conf
 echo "session required pam_limits.so" >> /etc/pam.d/common-session
