@@ -1,22 +1,20 @@
 {
     "metadata" : {
-        "game_uid"      : "ark",
+        "game_uid"      : "valheim",
         "warcamp"       : "default",
         "version"       : "1.0.0",
-        "description"   : "A PEON Ark game server.",
+        "description"   : "A PEON valheim game server.",
         "mode"          : "steamcmd",
-        "hostname"      : "peon.warcamp.ark",
+        "hostname"      : "peon.warcamp.valheim",
         "image"         : "umlatt/steamcmd"
     },
     "ports" : [
-            [ { "PORT" : ["2456", "udp"] } ],
-            [ { "PORT" : ["2457", "udp"] } ],
-            [ { "PORT" : ["2458", "udp"] } ]
+            [ { "PORT" : ["7777", "udp"] },{ "RAWPORT" : ["7778", "udp"] }, { "QUERYPORT" : ["27015", "udp"] },{ "RCON" : ["27020", "udp"] } ]
     ],
     "environment" : {
-        "STEAM_ID"       : "376030",
+        "STEAM_ID"       : "896660",
         "SERVER_NAME"    : null,
-        "WORLD_NAME"     : null,
+        "ADMIN_PASSWORD" : null,
         "PASSWORD"       : null
     },
     "volumes" : {
