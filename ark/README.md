@@ -34,24 +34,28 @@ You can change any of the settings according to your needs.
 ```yml
 version: '3'
 services:
-  server:
-    container_name: peon.warcamp.valheim.default
-    hostname: peon.steamcmd.valheim
-    image: umlatt/steamcmd
-    ports:
-      - 2456:2456/udp
-      - 2457:2457/udp
-      - 2458:2458/udp
-    environment:
-      - STEAMID=896660
-      # GAME SERVER VARIABLES
-      - PORT=2456
-      - SERVERNAME="my-valheim-server"
-      - WORLDNAME="my-valheim-world"
-      - PASSWORD="some-password"
-    volumes:
-      - ./actions:/actions
-      - ./data:/home/steam/steamcmd/data
-      - ./config:/home/steam/config
-      - ./user:/home/steam/.config/unity3d/IronGate/Valheim
+    server:
+        container_name: peon.warcamp.ark.servername
+        hostname: peon.warcamp.ark.servername
+        image: umlatt/steamcmd
+        ports:
+        - 7777:7777/udp
+        - 7778:7778/udp
+        - 27015:27015/udp
+        - 27020:27020/udp
+        environment:
+        - PORT=7777
+        - RAWPORT=7778
+        - QUERYPORT=27015
+        - RCON=27020
+        - STEAM_ID=376030
+        - SERVER_NAME=YOUR-SERVER-NAME
+        - ADMIN_PASSWORD=YOUR-SERVER-ADMIN-PASSWORD
+        - PASSWORD=YOUR-SERVER-PASSWORD
+        volumes:
+        - ./actions:/actions
+        - ./data:/home/steam/steamcmd/data
+        - ./config:/home/steam/config
+        - ./user:/home/steam/steamcmd/data/ShooterGame/Saved
+        user: 1000:1000
 ```
