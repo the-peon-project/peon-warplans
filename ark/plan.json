@@ -21,6 +21,6 @@
         "~!/actions"       : "/actions",
         "~!/data"          : "/home/steam/steamcmd/data"                     ,
         "~!/config"        : "/home/steam/config"                            ,
-        "~!/user"          : "/home/steam/temp"                                 
+        "~!/user"          : "/home/steam/steamcmd/data/ShooterGame/Saved"                                 
     }
 }
