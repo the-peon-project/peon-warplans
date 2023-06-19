@@ -2,7 +2,7 @@
 echo "##### Updating repo"
 apt-get update
 echo "##### Processing additional dependancies [Ark]"
-PACKAGES=("lib32gcc1")
+PACKAGES=("lib32gcc-s1")
 for pkg in "${PACKAGES[@]}"
 do
     if dpkg -s "$pkg" >/dev/null 2>&1; then
