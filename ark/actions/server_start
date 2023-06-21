@@ -12,6 +12,6 @@ export templdpath=$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=./linux64:$LD_LIBRARY_PATH
 export SteamAppId=376030
 
-./ShooterGame/Binaries/Linux/ShooterGameServer TheIsland?listen?Multihome=0.0.0.0?SessionName=$SERVER_NAME?ServerPassword=$PASSWORD?ServerAdminPassword=$ADMIN_PASSWORD?Port=$PORT?QueryPort=$PORT_QUERY?RCONPort=$PORT_RCON -nosteamclient -game -server -log -crossplay
+./ShooterGame/Binaries/Linux/ShooterGameServer TheIsland?listen?SessionName=$SERVER_NAME?ServerPassword=$PASSWORD?ServerAdminPassword=$ADMIN_PASSWORD?Port=$PORT?QueryPort=$PORT_QUERY?RCONEnabled=True?RCONPort=$PORT_RCON -nosteamclient -game -server -log -crossplay
 
 export LD_LIBRARY_PATH=$templdpath
