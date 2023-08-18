@@ -16,9 +16,9 @@
         "SERVER_NAME"    : null
     },
     "volumes" : {
-        "./actions"       : "/actions",
-        "./data"          : "/home/steam/steamcmd/data"                             ,
-        "./config"        : "/home/steam/config"                                    ,
-        "./user"          : "/home/steam/.config/Epic/FactoryGame/Saved/SaveGames"  
+        "~!/actions"       : "/actions",
+        "~!/data"          : "/home/steam/steamcmd/data"                             ,
+        "~!/config"        : "/home/steam/config"                                    ,
+        "~!/user"          : "/home/steam/.config/Epic/FactoryGame/Saved/SaveGames"  
     }
 }
