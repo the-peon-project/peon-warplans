@@ -3,7 +3,7 @@
         "game_uid"      : "valheim",
         "warcamp"       : "default",
         "version"       : "1.0.0",
-        "description"   : "A PEON Valheim game server.",
+        "description"   : "A Valheim game server for PEON.",
         "mode"          : "steamcmd",
         "hostname"      : "peon.warcamp.valheim",
         "image"         : "umlatt/steamcmd"
