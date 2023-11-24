@@ -2,7 +2,7 @@
 echo "###### Server Satisfactory.$SERVER_NAME [STARTING]"
 cd $INSTALL_DIR
 ##### Server Config
-echo $PORT > /home/steam/config/port
+echo $QUERYPORT > /home/steam/config/port
 ##### CONTENTS OF server_start.sh
 export templdpath=$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=./linux64:$LD_LIBRARY_PATH
