@@ -1,0 +1,26 @@
+{
+    "metadata" : {
+        "game_uid"      : "palworld",
+        "warcamp"       : "default",
+        "version"       : "1.0.0",
+        "description"   : "A Palworld game server for PEON.",
+        "mode"          : "steamcmd",
+        "hostname"      : "peon.warcamp.palworld",
+        "image"         : "umlatt/steamcmd"
+    },
+    "ports" : [
+            [ { "PORT" : ["8211", "tcp"] } ,
+              { "PORTUDP" : ["8211", "udp"] } ]
+    ],
+    "environment" : {
+        "STEAM_ID"       : "2394010",
+        "SERVER_NAME"    : null,
+        "PASSWORD"       : null
+    },
+    "volumes" : {
+        "~!/actions"       : "/actions",
+        "~!/data"          : "/home/steam/steamcmd/data",
+        "~!/config"        : "/home/steam/config",
+        "~!/user"          : "/home/steam/steamcmd/data/Pal/Saved" 
+    }
+}
