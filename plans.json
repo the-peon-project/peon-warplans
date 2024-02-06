@@ -28,5 +28,10 @@
         "title": "Ark",
         "game_uid": "ark",
         "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/ark"
+    },
+    {
+        "title": "Palworld",
+        "game_uid": "palworld",
+        "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/palworld"
     }
 ]
