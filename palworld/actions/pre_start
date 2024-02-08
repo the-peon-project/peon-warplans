@@ -17,21 +17,22 @@ update_server_settings(){
     echo "[/Script/Pal.PalGameWorldSettings]" > $config_file
     config_string="OptionSettings=("
     # General server settings
-    [[ -n $SERVER_NAME ]] && config_string+="ServerName='$SERVER_NAME'" || config_string+="ServerName='PEONPAL'"
-    [[ -n $SERVERDESCRIPTION ]] && config_string+=",ServerDescription='$SERVERDESCRIPTION'" || config_string+=",ServerDescription='A PALWORLD server built be PEON.'"
-    [[ -n $PASSWORD ]] && config_string+=",ServerPassword='$PASSWORD'" || config_string+=",ServerPassword='zugzug'"
-    [[ -n $ADMINPASSWORD ]] && config_string+=",AdminPassword='$ADMINPASSWORD'" || config_string+=",AdminPassword='zu88zu88'"
+    [[ -n $SERVER_NAME ]] && config_string+="ServerName=\"$SERVER_NAME\"" || config_string+="ServerName=\"PEONPAL\""
+    [[ -n $SERVERDESCRIPTION ]] && config_string+=",ServerDescription=\"$SERVERDESCRIPTION\"" || config_string+=",ServerDescription=\"A PALWORLD server built be PEON.\""
+    [[ -n $PASSWORD ]] && config_string+=",ServerPassword=\"$PASSWORD\"" || config_string+=",ServerPassword=\"zugzug\""
+    [[ -n $ADMINPASSWORD ]] && config_string+=",AdminPassword=\"$ADMINPASSWORD\"" || config_string+=",AdminPassword=\"zu88zu88\""
     [[ -n $SERVERPLAYERMAXNUM ]] && config_string+=",ServerPlayerMaxNum=$SERVERPLAYERMAXNUM" || config_string+=",ServerPlayerMaxNum=32"
     [[ -n $COOPLAYERMAXNUM ]] && config_string+=",CoopPlayerMaxNum=$COOPLAYERMAXNUM" || config_string+=",CoopPlayerMaxNum=4"
     # Network settings
     [[ -n $PORT ]] && config_string+=",PublicPort=$PORT" || config_string+=",PublicPort=8211"
-    [[ -n $SERVER_IP ]] && config_string+=",PublicIP='$SERVER_IP'" || config_string+=",PublicIP='localhost'"
+    [[ -n $SERVER_IP ]] && config_string+=",PublicIP=\"$SERVER_IP\"" || config_string+=",PublicIP=\"localhost\""
     [[ -n $RCONENABLED ]] && config_string+=",RCONEnabled=$RCONENABLED" || config_string+=",RCONEnabled=False"
     [[ -n $RCONPORT ]] && config_string+=",RCONPort=$RCONPORT" || config_string+=",RCONPort=25575"
     # Region and authentication
-    [[ -n $REGION ]] && config_string+=",Region='$REGION'" || config_string+=",Region=''"
+    [[ -n $REGION ]] && config_string+=",Region=\"$REGION\"" || config_string+=",Region=\"\""
     [[ -n $BUSEAUTH ]] && config_string+=",bUseAuth=$BUSEAUTH" || config_string+=",bUseAuth=True"
-    [[ -n $BANLISTURL ]] && config_string+=",BanListURL='$BANLISTURL'" || config_string+=",BanListURL='https://api.palworldgame.com/api/banlist.txt'"
+    [[ -n $BANLISTURL ]] && config_string+=",BanListURL=\"$BANLISTURL\"" || config_string+=",BanListURL=\"https://api.palworldgame.com/api/banlist.txt\""
+
     # Game mechanics
     [[ -n $DIFFICULTY ]] && config_string+=",Difficulty=$DIFFICULTY" || config_string+=",Difficulty=None"
     [[ -n $DAYTIMESPEEDRATE ]] && config_string+=",DayTimeSpeedRate=$DAYTIMESPEEDRATE" || config_string+=",DayTimeSpeedRate=1.000000"
@@ -57,7 +58,7 @@ update_server_settings(){
     [[ -n $COLLECTIONOBJECTHPRATE ]] && config_string+=",CollectionObjectHpRate=$COLLECTIONOBJECTHPRATE" || config_string+=",CollectionObjectHpRate=1.000000"
     [[ -n $COLLECTIONOBJECTRESPAWNSPEEDRATE ]] && config_string+=",CollectionObjectRespawnSpeedRate=$COLLECTIONOBJECTRESPAWNSPEEDRATE" || config_string+=",CollectionObjectRespawnSpeedRate=1.000000"
     [[ -n $ENEMYDROPITEMRATE ]] && config_string+=",EnemyDropItemRate=$ENEMYDROPITEMRATE" || config_string+=",EnemyDropItemRate=1.000000"
-    [[ -n $DEATHPENALTY ]] && config_string+=",DeathPenalty='$DEATHPENALTY'" || config_string+=",DeathPenalty=All"
+    [[ -n $DEATHPENALTY ]] && config_string+=",DeathPenalty=\\\"$DEATHPENALTY\\\"" || config_string+=",DeathPenalty=\"All\""
     [[ -n $BENABLEAIMASSISTPAD ]] && config_string+=",bEnableAimAssistPad=$BENABLEAIMASSISTPAD" || config_string+=",bEnableAimAssistPad=True"
     [[ -n $BENABLEAIMASSISTKEYBOARD ]] && config_string+=",bEnableAimAssistKeyboard=$BENABLEAIMASSISTKEYBOARD" || config_string+=",bEnableAimAssistKeyboard=False"
     [[ -n $DROPITEMMAXNUM ]] && config_string+=",DropItemMaxNum=$DROPITEMMAXNUM" || config_string+=",DropItemMaxNum=3000"
