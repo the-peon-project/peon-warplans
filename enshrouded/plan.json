@@ -9,7 +9,7 @@
         "image"         : "umlatt/steamcmd-winehq"
     },
     "ports" : [
-        [ { "PORT" : ["15636", "udp"] }, { "QUERYPORT" : ["15637", "udp"] } ]
+        [ { "PORT" : ["15636", "tcp/udp"] }, { "QUERYPORT" : ["15637", "tcp/udp"] } ]
     ],
     "environment" : {
         "STEAM_ID"       : "2278520",
