@@ -2,7 +2,7 @@
 config_file="/home/steam/steamcmd/data/enshrouded_server.json"
 
 update_server_settings(){
-    echo "{" > $config_file
+    config_string="{"
     # General server settings
     [[ -n $SERVER_NAME ]] && config_string+="\"name\":\"$SERVER_NAME\"," || config_string+="\"name\":\"PEONSHROUDED\","
     [[ -n $PASSWORD ]] && config_string+="\"password\":\"$PASSWORD\"," || config_string+="\"password\":\"zugzug\","
