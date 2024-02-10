@@ -1,18 +1,23 @@
 [
     {
+        "title": "Ark",
+        "game_uid": "ark",
+        "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/ark"
+    },
+    {
         "title": "Counterstrike Global Offensive (CS:GO)",
         "game_uid": "csgo",
         "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/csgo"
     },
     {
-        "title": "Valheim",
-        "game_uid": "valheim",
-        "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/valheim"
+        "title": "Enshrouded",
+        "game_uid": "enshrouded",
+        "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/enshrouded"
     },
     {
-        "title": "V Rising",
-        "game_uid": "vrising",
-        "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/vrising"
+        "title": "Palworld",
+        "game_uid": "palworld",
+        "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/palworld"
     },
     {
         "title": "Satisfactory",
@@ -25,13 +30,13 @@
         "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/starbound"
     },
     {
-        "title": "Ark",
-        "game_uid": "ark",
-        "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/ark"
+        "title": "Valheim",
+        "game_uid": "valheim",
+        "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/valheim"
     },
     {
-        "title": "Palworld",
-        "game_uid": "palworld",
-        "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/palworld"
+        "title": "V Rising",
+        "game_uid": "vrising",
+        "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/vrising"
     }
 ]
