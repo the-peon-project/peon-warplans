@@ -1,0 +1,17 @@
+#!/bin/bash
+config_file="/home/steam/steamcmd/data/enshrouded_server.json"
+
+update_server_settings(){
+    echo "{" > $config_file
+    # General server settings
+    [[ -n $SERVER_NAME ]] && config_string+="\"name\":\"$SERVER_NAME\"," || config_string+="\"name\":\"PEONSHROUDED\","
+    [[ -n $PASSWORD ]] && config_string+="\"password\":\"$PASSWORD\"," || config_string+="\"password\":\"zugzug\","
+    config_string+="\"saveDirectory\":\"/home/steam/server_user_data\","
+    config_string+="\"logDirectory\":\"/home/steam/server_user_data\","
+    [[ -n $SERVER_IP ]] && config_string+="\"ip\":\"$SERVER_IP\"," || config_string+="\"ip\":\"localhost\","
+    [[ -n $PORT ]] && config_string+="\"gamePort\":\"$PORT\"," || config_string+="\"gamePort\":\"15636\","
+    [[ -n $QUERYPORT ]] && config_string+="\"queryPort\":\"$QUERYPORT\"," || config_string+="\"queryPort\":\"15637\","
+    [[ -n $SLOTCOUNT ]] && config_string+="\"slotCount\":\"$SLOTCOUNT\"," || config_string+="\"slotCount\":\"16\""
+    config_string+="}"
+    echo $config_string >> $config_file
+}
