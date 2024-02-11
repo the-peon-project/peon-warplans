@@ -6,8 +6,8 @@ update_server_settings(){
     # General server settings
     [[ -n $SERVER_NAME ]] && config_string+="\"name\":\"$SERVER_NAME\"," || config_string+="\"name\":\"PEONSHROUDED\","
     [[ -n $PASSWORD ]] && config_string+="\"password\":\"$PASSWORD\"," || config_string+="\"password\":\"zugzug\","
-    config_string+="\"saveDirectory\":\"/home/steam/server_user_data\","
-    config_string+="\"logDirectory\":\"/home/steam/server_user_data\","
+    config_string+="\"saveDirectory\":\"/home/steam/server_user_data/save\","
+    config_string+="\"logDirectory\":\"/home/steam/server_user_data/log\","
     [[ -n $SERVER_IP ]] && config_string+="\"ip\":\"$SERVER_IP\"," || config_string+="\"ip\":\"localhost\","
     [[ -n $PORT ]] && config_string+="\"gamePort\":\"$PORT\"," || config_string+="\"gamePort\":\"15636\","
     [[ -n $QUERYPORT ]] && config_string+="\"queryPort\":\"$QUERYPORT\"," || config_string+="\"queryPort\":\"15637\","
