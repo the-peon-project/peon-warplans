@@ -2,4 +2,4 @@
 echo "##### Updating repo"
 apt-get update
 echo "##### Processing additional dependancies [Enshrouded]"
-apt install -y cabextract winbind screen xvfb
+apt install -y cabextract winbind screen
