@@ -1,5 +1,5 @@
 #!/bin/bash
-source /actions/pre_start
+source /actions/configure_settings
 
 echo "###### Server Palworld.$SERVER_NAME [STARTING]"
 cd $INSTALL_DIR
