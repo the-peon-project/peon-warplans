@@ -15,5 +15,5 @@ update_server_settings(){
     [[ -n $QUERYPORT ]] && config_string+="\"queryPort\":\"$QUERYPORT\"," || config_string+="\"queryPort\":\"15637\","
     [[ -n $SLOTCOUNT ]] && config_string+="\"slotCount\":\"$SLOTCOUNT\"," || config_string+="\"slotCount\":\"16\""
     config_string+="}"
-    echo $config_string >> $config_file
+    echo $config_string > $config_file
 }
