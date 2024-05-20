@@ -28,4 +28,4 @@ echo "Start Xvfb"
 Xvfb :0 -screen 0 1024x768x16 &
 echo "Start game server (Using 'DISPLAY=:0.0 ' as a prefix to wine)"
 cd $INSTALL_DIR
-DISPLAY=:0.0 wine64 ./VRisingServer.exe -persistentDataPath $user_data -serverName "$SERVER_NAME" -saveName "$WORLD_NAME" -password "$PASSWORD" -logFile "$user_data/vrising_server.log" "$PORT" "$QUERYPORT"
+DISPLAY=:0.0 wine64 ./VRisingServer.exe -persistentDataPath $user_data -serverName "$SERVER_NAME" -saveName "$WORLD_NAME" -password "$PASSWORD" -logFile "$user_data/vrising_server.log" -gamePort "$PORT" -queryPort "$QUERYPORT"
