@@ -12,7 +12,7 @@
         [ { "PORT_GAME" : ["27015","tcp/udp"] }, { "PORT_RCON" : ["37015","tcp/udp"] } ]
     ],
     "environment" : {
-        "STEAM_ID"       : "740",
+        "STEAM_ID"       : "730",
         "SERVER_NAME"    : null,
         "STEAM_GSLT"     : null,
         "CSGO_GAME_TYPE" : "0",
