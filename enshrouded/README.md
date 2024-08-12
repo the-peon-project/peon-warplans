@@ -34,7 +34,7 @@ For this guide, please make sure you have [Docker Compose](https://docs.docker.c
 You can change any of the settings according to your needs.
 
 ```yml
-version: '3'
+
 services:
   server:
     container_name: peon.warcamp.enshrouded.${SERVERNAME}
