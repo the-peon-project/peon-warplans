@@ -10,6 +10,11 @@
         "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/csgo"
     },
     {
+        "title": "Counter Strike 2",
+        "game_uid": "cs2",
+        "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/cs2"
+    },
+    {
         "title": "Enshrouded",
         "game_uid": "enshrouded",
         "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/enshrouded"

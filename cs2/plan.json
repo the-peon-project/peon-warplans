@@ -1,0 +1,35 @@
+{
+    "metadata" : {
+        "game_uid"       : "cs2",
+        "server_name"   : "default",
+        "version"       : "1.0.0",
+        "description"   : "A PEON cs2 game server.",
+        "mode"          : "steamcmd",
+        "hostname"      : "peon.steamcmd.cs2",
+        "image"         : "umlatt/steamcmd"
+    },
+    "ports" : [
+        [ { "PORT_GAME" : ["27015","tcp/udp"] }, { "PORT_RCON" : ["37015","tcp/udp"] } ]
+    ],
+    "environment" : {
+        "STEAM_ID"       : "730",
+        "SERVER_NAME"    : null,
+        "STEAM_GSLT"     : null,
+        "CS2_GAME_TYPE" : "0",
+        "CS2_GAME_MODE" : "0",
+        "CS2_MAP_GROUP" : "mg_active",
+        "CS2_MAP"       : "de_dust2" 
+    },
+    "volumes" : {
+        "~!/actions"       : "/actions",
+        "~!/data"          : "/home/steam/steamcmd/data",
+        "~!/config"        : "/home/steam/config"
+    },
+    "files" : {
+        "~!/autoexec.cfg"          : "/home/steam/data/cs2/cfg/autoexec.cfg",
+        "~!/server.cfg"            : "/home/steam/data/cs2/cfg/server.cfg",
+        "~!/gamemodes.txt"         : "/home/steam/data/cs2/gamemodes.txt",
+        "~!/gamemodes_server.txt"  : "/home/steam/data/cs2/gamemodes_server.txt"
+    }
+}
+
