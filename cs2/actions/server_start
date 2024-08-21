@@ -1,10 +1,3 @@
 #!/bin/bash
-echo "###### Server CS2.$SERVERNAME [STARTING]"
-cd $INSTALL_DIR
-##### Server Config
-echo $CS2_GAME_TYPE > /home/steam/config/game_type
-echo $CS2_GAME_MODE > /home/steam/config/game_mode
-echo $CS2_MAP_GROUP > /home/steam/config/map_group
-echo $CS2_MAP       > /home/steam/config/map
 
-./game/bin/linuxsteamrt64/cs2 -game cs2 -console -usercon +game_type $CS2_GAME_TYPE +game_mode $CS2_GAME_MODE +mapgroup $CS2_MAP_GROUP +map $CS2_MAP +sv_setsteamaccount $STEAM_GSLT
+source "${STEAMAPPDIR}/entry.sh"

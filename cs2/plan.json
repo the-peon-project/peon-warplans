@@ -1,6 +1,6 @@
 {
     "metadata" : {
-        "game_uid"       : "cs2",
+        "game_uid"      : "cs2",
         "server_name"   : "default",
         "version"       : "1.0.0",
         "description"   : "A PEON cs2 game server.",
@@ -9,16 +9,43 @@
         "image"         : "umlatt/steamcmd"
     },
     "ports" : [
-        [ { "PORT_GAME" : ["27015","tcp/udp"] }, { "PORT_RCON" : ["37015","tcp/udp"] } ]
+        [ { "CS2_PORT" : ["27015","tcp/udp"] }, { "TV_PORT" : ["27020","udp"] } ]
     ],
     "environment" : {
-        "STEAM_ID"       : "730",
-        "SERVER_NAME"    : null,
-        "STEAM_GSLT"     : null,
-        "CS2_GAME_TYPE" : "0",
-        "CS2_GAME_MODE" : "0",
-        "CS2_MAP_GROUP" : "mg_active",
-        "CS2_MAP"       : "de_dust2" 
+        "STEAM_ID"                : "730",
+        "SERVER_NAME"             : null,
+        "STEAM_GSLT"              : null,
+        "STEAMAPPID"              : "730",
+        "STEAMAPP"                : "cs2",
+        "STEAMAPPDIR"             : "/home/steam/steamcmd/data",
+        "STEAMAPPVALIDATE"        : "0",
+        "CS2_CHEATS"              : "0",
+        "CS2_SERVER_HIBERNATE"    : "0",
+        "CS2_RCON_PORT"           : "",
+        "CS2_LAN"                 : "0",
+        "CS2_RCONPW"              : "",                 
+        "CS2_PW"                  : "",
+        "CS2_MAXPLAYERS"          : "10",
+        "CS2_ADDITIONAL_ARGS"     : "",
+        "CS2_CFG_URL"             : "",
+        "CS2_GAMEALIAS"           : "",
+        "CS2_GAMETYPE"            : "0",
+        "CS2_GAMEMODE"            : "1",
+        "CS2_MAPGROUP"            : "mg_active",
+        "CS2_STARTMAP"            : "de_inferno",
+        "CS2_BOT_DIFFICULTY"      : "",
+        "CS2_BOT_QUOTA"           : "6",
+        "CS2_BOT_QUOTA_MODE"      : "",
+        "TV_AUTORECORD"           : "0",
+        "TV_ENABLE"               : "0",
+        "TV_PW"                   : "",
+        "TV_RELAY_PW"             : "",
+        "TV_MAXRATE"              : "0",
+        "TV_DELAY"                : "0",
+        "CS2_LOG"                 : "on",
+        "CS2_LOG_MONEY"           : "0",
+        "CS2_LOG_DETAIL"          : "0",
+        "CS2_LOG_ITEMS"           : "0"
     },
     "volumes" : {
         "~!/actions"       : "/actions",
@@ -32,4 +59,3 @@
         "~!/gamemodes_server.txt"  : "/home/steam/data/cs2/gamemodes_server.txt"
     }
 }
-
