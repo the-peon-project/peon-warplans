@@ -15,7 +15,6 @@
         "STEAM_ID"                : "730",
         "SERVER_NAME"             : null,
         "STEAM_GSLT"              : null,
-        "STEAMAPPID"              : "730",
         "STEAMAPP"                : "cs2",
         "STEAMAPPDIR"             : "/home/steam/steamcmd/data",
         "STEAMAPPVALIDATE"        : "0",
