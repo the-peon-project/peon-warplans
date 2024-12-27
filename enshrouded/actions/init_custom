@@ -1,0 +1,2 @@
+#!/bin/bash
+mv /actions/enshrouded_server.json /home/steam/steamcmd/data/savegame/enshrouded_server.json
