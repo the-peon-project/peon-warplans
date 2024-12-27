@@ -2,18 +2,12 @@
 config_file="/home/steam/steamcmd/data/enshrouded_server.json"
 
 update_server_settings(){
-    mkdir -p /home/steam/server_user_data/save
-    mkdir -p /home/steam/server_user_data/log
-    config_string="{"
-    # General server settings
-    [[ -n $SERVER_NAME ]] && config_string+="\"name\":\"$SERVER_NAME\"," || config_string+="\"name\":\"PEONSHROUDED\","
-    [[ -n $PASSWORD ]] && config_string+="\"password\":\"$PASSWORD\"," || config_string+="\"password\":\"zugzug\","
-    config_string+="\"saveDirectory\":\"Z:\\home\\steam\\server_user_data\\save\","
-    config_string+="\"logDirectory\":\"Z:\\home\\steam\\server_user_data\\log\","
-    [[ -n $SERVER_IP ]] && config_string+="\"ip\":\"$SERVER_IP\"," || config_string+="\"ip\":\"localhost\","
-    [[ -n $PORT ]] && config_string+="\"gamePort\":\"$PORT\"," || config_string+="\"gamePort\":\"15636\","
-    [[ -n $QUERYPORT ]] && config_string+="\"queryPort\":\"$QUERYPORT\"," || config_string+="\"queryPort\":\"15637\","
-    [[ -n $SLOTCOUNT ]] && config_string+="\"slotCount\":\"$SLOTCOUNT\"," || config_string+="\"slotCount\":\"16\""
-    config_string+="}"
-    echo $config_string > $config_file
+    failed=false
+    [[ -n $SERVER_NAME ]] && sed -i "s/\[SERVER_NAME\]/$SERVER_NAME/g" $config_file || failed=true
+    [[ -n $PASSWORD ]] && sed -i "s/\[[PASSWORD]\]/$PASSWORD/g" $config_file || failed=true
+    if failed; then
+        echo "Failed to update server settings. Server Name='$SERVER_NAME', Password='$PASSWORD'"
+        exit 1
+    fi
+    cp /home/steam/steamcmd/data/savegame/enshrouded_server.json $config_file
 }
