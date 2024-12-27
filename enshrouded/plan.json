@@ -3,10 +3,10 @@
         "game_uid"      : "enshrouded",
         "warcamp"       : "default",
         "version"       : "1.0.0",
-        "description"   : "A PEON enshrouded game server.",
-        "mode"          : "steamcmd-winehq",
+        "description"   : "A PEON Enshrouded game server.",
+        "mode"          : "steamcmd-proton",
         "hostname"      : "peon.warcamp.enshrouded",
-        "image"         : "umlatt/steamcmd-winehq"
+        "image"         : "umlatt/steamcmd-proton"
     },
     "ports" : [
         [ { "PORT" : ["15636", "tcp/udp"] }, { "QUERYPORT" : ["15637", "tcp/udp"] } ]
@@ -20,7 +20,7 @@
         "~!/actions"       : "/actions",
         "~!/data"          : "/home/steam/steamcmd/data"   ,
         "~!/config"        : "/home/steam/config"          ,
-        "~!/user"          : "/home/steam/server_user_data"
+        "~!/user"          : "/home/steam/steamcmd/data/savegame"
     }
 }
 
