@@ -44,7 +44,7 @@
 	},
 	"userGroups": [
 		{
-			"name": "[SERVERNAME]",
+			"name": "[SERVER_NAME]",
 			"password": "[PASSWORD]",
 			"canKickBan": false,
 			"canAccessInventories": true,
