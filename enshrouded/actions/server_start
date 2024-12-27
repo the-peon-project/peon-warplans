@@ -2,22 +2,13 @@
 source /actions/configure_settings
 
 echo "###### Server Enshrouded.$SERVER_NAME [STARTING]"
-user_data='/home/steam/server_user_data'
 ##### Server Config
 echo $PORT > /home/steam/config/port
 echo $SERVER_NAME > /home/steam/config/server_name 
 echo $PASSWORD > /home/steam/config/password
 #echo "THIS SERVER IS KNOWN TO TAKE UP TO 15 MINUTES TO START." > /home/steam/config/notice
-# Create if not already created
-if [ ! -d "$user_data" ]; then
-    mkdir -p "$user_data"
-fi
 update_server_settings
 # CUSTOM GAME SERVER COMMAND
-echo "Clean any existing /tmp/.X0-lock"
-rm -rf /tmp/.X0-lock 2>&1
-echo "Start Xvfb"
-Xvfb :0 -screen 0 1024x768x16 &
-echo "Start game server (Using 'DISPLAY=:0.0 ' as a prefix to wine)"
 cd $INSTALL_DIR
-DISPLAY=:0.0 wine64 ./enshrouded_server.exe
+
+/home/steam/steamcmd/compatibilitytools.d/GE-Proton9-18/proton run enshrouded_server.exe
