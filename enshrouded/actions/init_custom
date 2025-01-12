@@ -1,2 +1,5 @@
 #!/bin/bash
-mv /actions/enshrouded_server.json /home/steam/steamcmd/data/savegame/enshrouded_server.json
+# Check if file /home/steam/steamcmd/data/savegame/enshrouded_server.json does not exist
+if [ ! -f /home/steam/steamcmd/data/savegame/enshrouded_server.json ]; then
+    cp /actions/enshrouded_server.json /home/steam/steamcmd/data/savegame/enshrouded_server.json
+fi
