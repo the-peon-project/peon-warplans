@@ -1,8 +1,8 @@
-# CSGO
+# Quake III Arena
 
-The PEON war plan that Peon uses to deploy a CSGO game server with minimal effort. *\*Configuring the server on the other hand... is admin, but we don't have control of that*
+The PEON war plan that Peon uses to deploy a Quake III arena game server with minimal effort. *\*Configuring the server on the other hand... is admin, but we don't have control of that*
 
-![CS:GO](./logo.png)
+![Quake 3 Arena](./logo.png)
 
 ## Documentation
 
@@ -32,27 +32,5 @@ For this guide, please make sure you have [Docker Compose](https://docs.docker.c
 You can change any of the settings according to your needs.
 
 ```yml
-
-services:
-  server:
-    container_name: peon.warcamp.csgo.default
-    hostname: peon.warcamp.csgo
-    image: umlatt/steamcmd
-    ports:
-      - 27015:27015/tcp
-      - 27015:27015/udp
-      - 37015:37015/tcp
-      - 37015:37015/udp
-    environment:
-      - STEAMID=740
-      # GAME SERVER VARIABLES
-      - STEAM_GSLT=0
-      - CSGO_GAME_TYPE=0
-      - CSGO_GAME_MODE=0
-      - CSGO_MAP_GROUP="mg_active"
-      - CSGO_MAP="de_dust2"
-    volumes:
-      - ./actions:/actions
-      - ./data:/home/steam/steamcmd/data
-      - ./config:/home/steam/config
+// TODO
 ```
