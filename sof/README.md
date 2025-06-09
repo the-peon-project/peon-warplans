@@ -62,5 +62,4 @@ services:
         - /root/peon/servers/sof/myforest/actions:/actions
         - /root/peon/servers/sof/myforest/data:/home/steam/steamcmd/sof
         - /root/peon/servers/sof/myforest/config:/home/steam/.config/unity3d/Endnight/SonsOfTheForestDS
-        user: 1000:1000
 ```
