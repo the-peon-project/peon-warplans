@@ -6,7 +6,7 @@ The PEON war plan that Peon uses to deploy a Sons of the Forest dedicated game s
 
 ## Documentation
 
-If you would like info on how to use this plan, the up-to-date documentation can be found in the [PEON project game guide](http://docs.warcamp.org/guides/games/sof/).
+If you would like info on how to use this plan, the up-to-date documentation can be found in the [PEON project game guide](http://docs.warcamp.org/guides/games/sonsoftheforest/).
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K567ILJ)
 
@@ -35,8 +35,8 @@ You can change any of the settings according to your needs.
 
 services:
     server:
-        container_name: peon.warcamp.sof.myforest
-        hostname: peon.warcamp.sof.myforest
+        container_name: peon.warcamp.sonsoftheforest.myforest
+        hostname: peon.warcamp.sonsoftheforest.myforest
         image: jammsen/sons-of-the-forest-dedicated-server
         ports:
         - 8766:8766/udp
@@ -59,8 +59,8 @@ services:
         - ALLOW_ENEMIES_CREATIVE=false                # Allow enemies in creative mode.
         - ENABLE_ENEMIES=true                         # Enable enemy spawning.
         volumes:
-        - /root/peon/servers/sof/myforest/actions:/actions
-        - /root/peon/servers/sof/myforest/data:/home/steam/steamcmd/sof
-        - /root/peon/servers/sof/myforest/config:/home/steam/.config/unity3d/Endnight/SonsOfTheForestDS
+        - /root/peon/servers/sonsoftheforest/myforest/actions:/actions
+        - /root/peon/servers/sonsoftheforest/myforest/data:/home/steam/steamcmd/sonsoftheforest
+        - /root/peon/servers/sonsoftheforest/myforest/config:/home/steam/.config/unity3d/Endnight/SonsOfTheForestDS
         user: 1000:1000
 ```

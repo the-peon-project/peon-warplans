@@ -30,7 +30,7 @@
     },
     "volumes" : {
         "~!/actions"       : "/actions",
-        "~!/data"          : "/home/steam/steamcmd/sof",
+        "~!/data"          : "/home/steam/steamcmd/sonsoftheforest",
         "~!/config"        : "/home/steam/.config/unity3d/Endnight/SonsOfTheForestDS"
     },
     "files" : {
