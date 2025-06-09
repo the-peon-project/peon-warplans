@@ -1,11 +1,11 @@
 {
     "metadata" : {
-        "game_uid"      : "sof",
+        "game_uid"      : "sonsoftheforest",
         "server_name"   : "default",
         "version"       : "1.0.0",
         "description"   : "A Sons of the Forest game server for PEON.",
         "mode"          : "steamcmd",
-        "hostname"      : "peon.steamcmd.sof",
+        "hostname"      : "peon.steamcmd.sonsoftheforest",
         "image"         : "jammsen/sons-of-the-forest-dedicated-server"
     },
     "ports" : [
