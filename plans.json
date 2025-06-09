@@ -30,6 +30,11 @@
         "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/satisfactory"
     },
     {
+        "title": "Sons of the Forest",
+        "game_uid": "sof",
+        "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/sof"
+    },
+    {
         "title": "Starbound",
         "game_uid": "starbound",
         "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/starbound"
