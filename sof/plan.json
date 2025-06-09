@@ -1,11 +1,11 @@
 {
     "metadata" : {
-        "game_uid"      : "sonsoftheforest",
+        "game_uid"      : "sof",
         "server_name"   : "default",
         "version"       : "1.0.0",
         "description"   : "A Sons of the Forest game server for PEON.",
         "mode"          : "steamcmd",
-        "hostname"      : "peon.steamcmd.sonsoftheforest",
+        "hostname"      : "peon.steamcmd.sof",
         "image"         : "jammsen/sons-of-the-forest-dedicated-server"
     },
     "ports" : [
@@ -30,7 +30,7 @@
     },
     "volumes" : {
         "~!/actions"       : "/actions",
-        "~!/data"          : "/home/steam/steamcmd/sonsoftheforest",
+        "~!/data"          : "/home/steam/steamcmd/sof",
         "~!/config"        : "/home/steam/.config/unity3d/Endnight/SonsOfTheForestDS"
     },
     "files" : {
