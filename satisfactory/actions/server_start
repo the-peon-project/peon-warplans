@@ -6,8 +6,8 @@ echo $QUERYPORT > /home/steam/config/port
 ##### CONTENTS OF server_start.sh
 export templdpath=$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=./linux64:$LD_LIBRARY_PATH
-export SteamAppId=892970
+export SteamAppId=1690800
 
-./FactoryServer.sh -ServerQueryPort=$QUERYPORT -BeaconPort=$BEACONPORT -Port=$PORT 
+./FactoryServer.sh -ServerQueryPort=$QUERYPORT -BeaconPort=$BEACONPORT -Port=$PORT -multihome=$IP
 
 export LD_LIBRARY_PATH=$templdpath

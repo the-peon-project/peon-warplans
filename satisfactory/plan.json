@@ -9,7 +9,7 @@
         "image"         : "umlatt/steamcmd"
     },
     "ports" : [
-            [ { "QUERYPORT" : ["15777", "udp"] }, { "BEACONPORT" : ["15000", "udp"] }, { "PORT" : ["7777", "udp"] } ]
+            [ { "QUERYPORT" : ["15777", "udp"] }, { "BEACONPORT" : ["15000", "udp"] }, { "PORT" : ["7777", "udp"] }, { "PORT" : ["7777", "tcp"] }, { "PORT" : ["8888", "udp"] }, { "PORT" : ["8888", "tcp"] } ]
     ],
     "environment" : {
         "STEAM_ID"       : "1690800",
