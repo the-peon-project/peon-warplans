@@ -9,4 +9,4 @@ echo $PASSWORD > /home/steam/config/password
 cd $INSTALL_DIR
 update_server_settings || { echo " [x] Failed to update server settings."; exit 1; }
 # CUSTOM GAME SERVER COMMAND
-/home/steam/steamcmd/compatibilitytools.d/GE-Proton9-18/proton run enshrouded_server.exe
+/home/steam/steamcmd/compatibilitytools.d/proton/proton run enshrouded_server.exe
