@@ -15,6 +15,11 @@
         "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/cs2"
     },
     {
+        "title": "Duke Nukem 3D",
+        "game_uid": "dukenukem",
+        "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/dukenukem"
+    },
+    {
         "title": "Enshrouded",
         "game_uid": "enshrouded",
         "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/enshrouded"
