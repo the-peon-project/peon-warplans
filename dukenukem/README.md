@@ -1,6 +1,8 @@
-# Duke Nukem 3D (EDuke32)
+# Peon Warplan - Duke Nukem 3D (EDuke32)
 
 The PEON war plan that Peon uses to deploy a Duke Nukem 3D multiplayer game server using the EDuke32 source port.
+
+![DukeNukem3D](./logo.png)
 
 ## Documentation
 
