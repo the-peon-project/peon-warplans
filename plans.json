@@ -55,6 +55,11 @@
         "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/valheim"
     },
     {
+        "title": "Windrose",
+        "game_uid": "windrose",
+        "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/windrose"
+    },
+    {
         "title": "V Rising",
         "game_uid": "vrising",
         "plan_url" : "https://github.com/the-peon-project/peon-warplans/tree/main/vrising"
