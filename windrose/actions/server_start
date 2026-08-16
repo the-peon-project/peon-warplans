@@ -5,6 +5,7 @@ echo "$SERVER_NAME" > /home/steam/config/server_name
 echo "$PASSWORD" > /home/steam/config/password
 
 launcher_pid=""
+windrose_process_pattern="WindroseServer(-Win64-Shipping)?\\.exe"
 cleanup() {
     echo -n "OFFLINE" > "$STATE_FILE"
     if [ -n "$launcher_pid" ] && kill -0 "$launcher_pid" 2>/dev/null; then
@@ -47,24 +48,26 @@ if [ -f "/actions/ServerDescription.json" ]; then
 fi
 
 cd "$(dirname "$windrose_entry")" || exit 1
-/home/steam/steamcmd/compatibilitytools.d/proton/proton run "./$(basename "$windrose_entry")" -log &
+export SDL_VIDEODRIVER="${SDL_VIDEODRIVER:-dummy}"
+export SDL_AUDIODRIVER="${SDL_AUDIODRIVER:-dummy}"
+/home/steam/steamcmd/compatibilitytools.d/proton/proton run "./$(basename "$windrose_entry")" -batchmode -nographics -log &
 launcher_pid=$!
 
 for _ in $(seq 1 30); do
-    if pgrep -f "WindroseServer.exe" >/dev/null; then
+    if pgrep -f "$windrose_process_pattern" >/dev/null; then
         echo -n "STARTED" > "$STATE_FILE"
         break
     fi
     sleep 2
 done
 
-if ! pgrep -f "WindroseServer.exe" >/dev/null; then
+if ! pgrep -f "$windrose_process_pattern" >/dev/null; then
     echo " [x] Windrose server process did not start."
     wait "$launcher_pid"
     exit 1
 fi
 
-while pgrep -f "WindroseServer.exe" >/dev/null; do
+while pgrep -f "$windrose_process_pattern" >/dev/null; do
     sleep 10
 done
 
