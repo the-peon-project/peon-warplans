@@ -1,3 +1,13 @@
+> **⚠️ DEPRECATED — moved to the `peon` monorepo**
+>
+> This repository has been consolidated into [`peon`](https://github.com/the-peon-project/peon) at
+> [`peon/warplans`](https://github.com/the-peon-project/peon/tree/main/warplans), with full commit
+> history preserved via `git subtree`. This repo is archived and read-only — make new changes in
+> `peon/warplans` instead. The orchestrator (`peon/services/orc`) now reads warplans directly from
+> that new location.
+
+---
+
 # The *PEON* project (FOSS)
 
 [![PEON](https://github.com/the-peon-project/.github/blob/main/media/images/peon-logo.png)](http://www.warcamp.org)

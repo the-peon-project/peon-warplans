@@ -1,3 +1,10 @@
+> **⚠️ DEPRECATED — moved to the `peon` monorepo.** This repo's content now lives at
+> `peon/warplans` (full history preserved via `git subtree`). See
+> `/home/richard/development/peon/warplans/CLAUDE.md` for the current guide. This repo is archived
+> and read-only.
+
+---
+
 # PEON Warplans Guide
 
 This repo defines supported games and their deployment recipes. Treat each game directory as a discrete configuration surface.
